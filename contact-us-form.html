@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us | Project_Winter</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #0f0f1e, #1a1a2e);
+      color: #e0e0ff;
+    }
+
+    header {
+      background-color: #09091a;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    nav a {
+      margin-left: 20px;
+      color: #ccc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #81a1ff;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 40px;
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 32px;
+      color: #81a1ff;
+      margin-bottom: 30px;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .contact-box {
+      background: rgba(255, 255, 255, 0.03);
+      padding: 20px;
+      border-left: 5px solid #81a1ff;
+      border-radius: 10px;
+    }
+
+    .contact-box h2 {
+      margin: 0 0 8px;
+      color: #ffffff;
+    }
+
+    .contact-box p {
+      margin: 4px 0;
+      color: #ccccff;
+      font-size: 16px;
+    }
+
+    .contact-box i {
+      margin-right: 8px;
+    }
+
+    footer {
+      background-color: #111122;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+      color: #666;
+      margin-top: 60px;
+    }
+
+    footer a {
+      color: #aaa;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo" onclick="location.href='index.html'">Project_Winter</div>
+    <nav>
+      <a href="services.html">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Contact Us</h1>
+
+    <div class="contact-info">
+      <div class="contact-box">
+        <h2>Chethan Kumar</h2>
+        <p><i class="fas fa-phone"></i> +91-9876543210</p>
+        <p><i class="fas fa-envelope"></i> chethan@example.com</p>
+        <p><i class="fab fa-whatsapp"></i> +91-9876543210</p>
+      </div>
+
+      <div class="contact-box">
+        <h2>Prakash Kshatriya</h2>
+        <p><i class="fas fa-phone"></i> +91-9876543211</p>
+        <p><i class="fas fa-envelope"></i> prakash@example.com</p>
+        <p><i class="fab fa-whatsapp"></i> +91-9876543211</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <a href="about.html"><i class="fas fa-info-circle"></i> About Us</a> |
+    <a href="privacy.html"><i class="fas fa-shield-alt"></i> Privacy Policy</a>
+    <p>&copy; 2025 Project_Winter. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
