@@ -8,19 +8,19 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
+
   <!-- Header -->
-  <header>
-    <div class="logo">
-      <img src="https://raw.githubusercontent.com/ChethanKumarDeveloper/DuckData/59130f67f4695195e1faa1a508176b460ffc3b6c/Minimal_vector-style_1-removebg-preview.png" alt="DuckData Logo">
-    </div>
-    <div class="menu-toggle" onclick="document.querySelector('nav').classList.toggle('show')">☰</div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="projects.html" class="active">Projects</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+ <header>
+  <div class="logo" onclick="location.href='index.html'">
+    <img src=".//dudckdatalogo.png" alt="DuckData Logo" height="40">
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
 
   <!-- Projects Section -->
   <section class="fade-in">
@@ -71,9 +71,19 @@
   </section>
 
   <!-- Footer -->
-  <footer>
-    © 2025 DuckData. All rights reserved. | <a href="privacy.html">Privacy Policy</a>
-  </footer>
+  <footer style="background-color: #0077cc; color: white; padding: 20px 10px; text-align: center;">
+  <div style="margin-bottom: 10px;">
+    © 2025 DuckData. All rights reserved.
+  </div>
+  <div style="display: flex; justify-content: center; gap: 20px; align-items: center; flex-wrap: wrap;">
+    <a href="privacy.html" style="color: white; display: flex; align-items: center; gap: 5px;">
+      <i data-lucide="shield-check" style="width: 16px; height: 16px;"></i> Privacy Policy
+    </a>
+    <a href="about.html" style="color: white; display: flex; align-items: center; gap: 5px;">
+      <i data-lucide="info" style="width: 16px; height: 16px;"></i> About Us
+    </a>
+  </div>
+</footer>
 
   <!-- Responsive Menu JS -->
   <script>
