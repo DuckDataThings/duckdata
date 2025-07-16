@@ -4,56 +4,142 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Privacy Policy | DuckData</title>
-  <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #f9fbff;
+      color: #1a1a1a;
+    }
+
+    header {
+      background-color: #0077cc;
+      color: white;
+      padding: 16px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    nav a {
+      margin-left: 20px;
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #ffea00;
+    }
+
+    section {
+      max-width: 960px;
+      margin: 60px auto;
+      padding: 40px;
+      background-color: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    }
+
+    .section-title {
+      font-size: 32px;
+      color: #0066cc;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .policy-text h3 {
+      color: #003366;
+      margin-top: 25px;
+    }
+
+    .policy-text p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    footer {
+      background-color: #0077cc;
+      color: white;
+      padding: 20px 10px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+      margin-left: 10px;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <div class="logo">
-      <img src="https://raw.githubusercontent.com/ChethanKumarDeveloper/DuckData/59130f67f4695195e1faa1a508176b460ffc3b6c/Minimal_vector-style_1-removebg-preview.png" alt="DuckData Logo">
-    </div>
-    <div class="menu-toggle" onclick="document.querySelector('nav').classList.toggle('show')">☰</div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
 
-  <!-- Privacy Policy Content -->
-  <section class="fade-in">
-    <h1 class="section-title">Privacy Policy</h1>
-    <div class="policy-text">
-      <p>At DuckData, we value your privacy. This privacy policy outlines how we collect, use, and protect your personal information.</p>
+<header>
+  <div class="logo" onclick="location.href='index.html'">
+    <img src=".//dudckdatalogo.png" alt="DuckData Logo" height="40">
+  </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
 
-      <h3>Information We Collect</h3>
-      <p>We may collect personal details such as your name, email, and phone number when you fill out our contact form. We do not store payment information on our servers.</p>
+<section class="fade-in">
+  <h1 class="section-title">Privacy Policy</h1>
+  <div class="policy-text">
+    <p>At DuckData, we value your privacy. This privacy policy outlines how we collect, use, and protect your personal information.</p>
 
-      <h3>How We Use Your Information</h3>
-      <p>We use the collected information to respond to your inquiries, provide services, and improve our platform. We will never sell your personal data.</p>
+    <h3>Information We Collect</h3>
+    <p>We may collect personal details such as your name, email, and phone number when you fill out our contact form. We do not store payment information on our servers.</p>
 
-      <h3>Data Security</h3>
-      <p>Your data is handled securely and confidentially. We implement standard security protocols to prevent unauthorized access.</p>
+    <h3>How We Use Your Information</h3>
+    <p>We use the collected information to respond to your inquiries, provide services, and improve our platform. We will never sell your personal data.</p>
 
-      <h3>Third-Party Services</h3>
-      <p>We may use trusted third-party services (e.g., Formspree) to manage form submissions or communication. These services have their own privacy policies.</p>
+    <h3>Data Security</h3>
+    <p>Your data is handled securely and confidentially. We implement standard security protocols to prevent unauthorized access.</p>
 
-      <h3>Your Consent</h3>
-      <p>By using our website, you consent to our privacy policy. You may withdraw your consent at any time by contacting us directly.</p>
+    <h3>Third-Party Services</h3>
+    <p>We may use trusted third-party services (e.g., Formspree) to manage form submissions or communication. These services have their own privacy policies.</p>
 
-      <h3>Updates</h3>
-      <p>This privacy policy may be updated periodically. Please check back regularly to stay informed.</p>
+    <h3>Your Consent</h3>
+    <p>By using our website, you consent to our privacy policy. You may withdraw your consent at any time by contacting us directly.</p>
 
-      <h3>Contact</h3>
-      <p>If you have any questions about this policy, reach out to us at <strong>contact@duckdata.in</strong>.</p>
-    </div>
-  </section>
+    <h3>Updates</h3>
+    <p>This privacy policy may be updated periodically. Please check back regularly to stay informed.</p>
 
-  <!-- Footer -->
-  <footer>
-    © 2025 DuckData. All rights reserved. | <a href="privacy.html">Privacy Policy</a>
-  </footer>
+    <h3>Contact</h3>
+    <p>If you have any questions about this policy, reach out to us at <strong>contact@duckdata.in</strong>.</p>
+  </div>
+</section>
+
+<footer>
+  <a href="about.html"><i data-lucide="info"></i> About Us</a>
+  <a href="privacy.html"><i data-lucide="shield-check"></i> Privacy Policy</a>
+  <div style="margin-top: 10px;">&copy; 2025 DuckData. All rights reserved.</div>
+</footer>
+
+<script>
+  lucide.createIcons();
+</script>
+
 </body>
 </html>
