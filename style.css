@@ -17,7 +17,7 @@ header {
   top: 0;
   background-color: #377ee2;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  padding: 15px 30px;
+  padding: 8px 20px;
   z-index: 1000;
   display: flex;
   align-items: center;
@@ -152,7 +152,7 @@ h2 {
 /* Floating Button */
 .floating-call-button {
   position: fixed;
-  bottom: 20px;
+  bottom: 100px;
   right: 20px;
   background-color: #0073e6;
   color: white;
@@ -171,7 +171,7 @@ h2 {
 footer {
   background-color: #0077cc;
   color: white;
-  padding: 20px 10px;
+  padding: 10px 5px;
   text-align: center;
 }
 footer a {
