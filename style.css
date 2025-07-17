@@ -17,13 +17,14 @@ header {
   top: 0;
   background-color: #377ee2;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  padding: 8px 20px;
+  padding: 4px 10px;
   z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .logo img {
+  right: 0;
   height: 48px;
 }
 .menu-toggle {
