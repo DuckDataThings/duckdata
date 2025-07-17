@@ -7,38 +7,54 @@
   <link rel="stylesheet" href="style.css" />
   <script src="https://unpkg.com/lucide@latest"></script>
   <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to bottom right, #f0f7ff, #ffffff);
-      color: #1a1a1a;
-    }
+    /* Desktop Navigation */
+nav {
+  display: flex;
+  gap: 20px;
+}
 
-    header {
-      background-color: #0077cc;
-      color: white;
-      padding: 16px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+/* Hide hamburger by default */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+}
 
-    .logo {
-      font-size: 24px;
-      font-weight: bold;
-      cursor: pointer;
-    }
+/* Mobile Styles */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Adjust based on header height */
+    right: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    padding: 15px;
+    border-radius: 8px;
+    z-index: 9999;
+    align-items: flex-end; /* Align links to the right */
+    text-align: right;
+    width: fit-content;
+  }
 
-    nav a {
-      margin-left: 20px;
-      color: white;
-      text-decoration: none;
-      font-weight: 500;
-    }
+  nav.show {
+    display: flex;
+  }
 
-    nav a:hover {
-      color: #ffea00;
-    }
+  .menu-toggle {
+    display: block;
+  }
+
+  nav a {
+    padding: 10px 0;
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+  }
+}
+
 
     .container {
       max-width: 960px;
@@ -115,7 +131,10 @@
 </footer>
 
 <script>
-  lucide.createIcons();
+  document.querySelector('.menu-toggle').addEventListener('click', () => {
+  document.querySelector('nav').classList.toggle('show');
+});
+
 </script>
 
 </body>
