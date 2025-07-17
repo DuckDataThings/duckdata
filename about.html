@@ -8,120 +8,54 @@
   <link rel="stylesheet" href="style.css">
   <script src="https://unpkg.com/lucide@latest"></script>
   <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background: #f9fbff;
-      color: #1a1a1a;
-    }
+  /* Desktop Navigation */
+nav {
+  display: flex;
+  gap: 20px;
+}
 
-    header {
-      background-color: #0077cc;
-      color: white;
-      padding: 16px 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-    }
+/* Hide hamburger by default */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+}
 
-    .logo img {
-      height: 40px;
-    }
+/* Mobile Styles */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Adjust based on header height */
+    right: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    padding: 15px;
+    border-radius: 8px;
+    z-index: 9999;
+    align-items: flex-end; /* Align links to the right */
+    text-align: right;
+    width: fit-content;
+  }
 
-    nav {
-      display: flex;
-      gap: 20px;
-    }
+  nav.show {
+    display: flex;
+  }
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: 500;
-    }
+  .menu-toggle {
+    display: block;
+  }
 
-    nav a:hover {
-      color: #ffea00;
-    }
+  nav a {
+    padding: 10px 0;
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+  }
+}
 
-    .menu-toggle {
-      display: none;
-      font-size: 24px;
-      cursor: pointer;
-    }
-
-    section.hero {
-      max-width: 960px;
-      margin: 60px auto;
-      padding: 40px 20px;
-      background-color: #ffffff;
-      border-radius: 16px;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
-    }
-
-    section.hero h1 {
-      font-size: 32px;
-      color: #0066cc;
-      margin-bottom: 30px;
-      text-align: center;
-    }
-
-    section.hero p {
-      font-size: 16px;
-      line-height: 1.7;
-      color: #333;
-      text-align: left;
-    }
-
-    footer {
-      background-color: #0077cc;
-      color: white;
-      padding: 20px 10px;
-      text-align: center;
-    }
-
-    footer a {
-      color: white;
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-      text-decoration: none;
-      margin: 0 10px;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
-    }
-
-    /* Mobile Responsive */
-    @media (max-width: 768px) {
-      nav {
-        display: none;
-        flex-direction: column;
-        gap: 10px;
-        width: 100%;
-        margin-top: 10px;
-      }
-
-      nav.show {
-        display: flex;
-      }
-
-      .menu-toggle {
-        display: block;
-        color: white;
-      }
-
-      header {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      footer div {
-        flex-direction: column;
-        gap: 10px;
-      }
-    }
   </style>
 </head>
 <body>
