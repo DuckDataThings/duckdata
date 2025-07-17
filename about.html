@@ -133,16 +133,13 @@
         <img src="./dudckdatalogo.png" alt="DuckData Logo" />
       </a>
     </div>
-
-    <div class="menu-toggle" onclick="document.querySelector('nav').classList.toggle('show')">☰</div>
-
+    <div class="menu-toggle">☰</div>
     <nav>
       <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
+      <a href="about.html">About us</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
-
   <!-- Hero Section -->
   <section class="hero">
     <h1>About Us</h1>
@@ -161,13 +158,19 @@
   </section>
 
   <!-- Footer -->
-  <footer>
-    <div style="margin-bottom: 10px;">&copy; 2025 DuckData. All rights reserved.</div>
-    <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
-      <a href="privacy.html"><i data-lucide="shield-check"></i> Privacy Policy</a>
-      <a href="about.html"><i data-lucide="info"></i> About Us</a>
-    </div>
-  </footer>
+<footer style="background-color: #0077cc; color: white; padding: 15px 8px; text-align: center;">
+  <div style="margin-bottom: 10px;">
+    © 2025 DuckData. All rights reserved.
+  </div>
+  <div style="display: flex; justify-content: center; gap: 20px; align-items: center; flex-wrap: wrap;">
+    <a href="privacy.html" style="color: white; display: flex; align-items: center; gap: 5px;">
+      <i data-lucide="shield-check" style="width: 16px; height: 16px;"></i> Privacy Policy
+    </a>
+    <a href="about.html" style="color: white; display: flex; align-items: center; gap: 5px;">
+      <i data-lucide="info" style="width: 16px; height: 16px;"></i> About Us
+    </a>
+  </div>
+</footer>
 
   <script>
     lucide.createIcons();
