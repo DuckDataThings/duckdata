@@ -7,21 +7,155 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #f9fbff;
+      color: #1a1a1a;
+    }
+
+    header {
+      background-color: #0077cc;
+      color: white;
+      padding: 16px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo img {
+      height: 40px;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #ffea00;
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    main.contact-section {
+      max-width: 700px;
+      margin: 60px auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+      text-align: center;
+    }
+
+    .contact-section h2 {
+      color: #0066cc;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .contact-section p {
+      font-size: 16px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .email-link,
+    .call-button {
+      font-size: 18px;
+      color: #0077cc;
+      text-decoration: none;
+      display: inline-block;
+      margin: 10px 0;
+      background-color: #eaf6ff;
+      padding: 12px 20px;
+      border-radius: 8px;
+      transition: background 0.2s ease;
+    }
+
+    .email-link:hover,
+    .call-button:hover {
+      background-color: #d0eaff;
+    }
+
+    footer {
+      background-color: #0077cc;
+      color: white;
+      padding: 20px 10px;
+      text-align: center;
+    }
+
+    footer a {
+      color: white;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        margin-top: 10px;
+      }
+
+      nav.show {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: block;
+        color: white;
+      }
+
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      footer div {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
 </head>
 <body>
 
   <!-- Header -->
   <header>
-  <div class="logo">
-    <a href="index.html"></a>
-  <img src=".//dudckdatalogo.png" alt="DuckData Logo" />
-</div>
+    <div class="logo">
+      <a href="index.html">
+        <img src="./dudckdatalogo.png" alt="DuckData Logo" />
+      </a>
+    </div>
 
     <div class="menu-toggle" onclick="document.querySelector('nav').classList.toggle('show')">☰</div>
+    
     <nav>
-      <a href="index">Home</a>
-      <a href="about>About us</a>
-      <a href="projects">Projects</a>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="projects.html">Projects</a>
     </nav>
   </header>
 
@@ -43,19 +177,15 @@
   </main>
 
   <!-- Footer -->
- <footer style="background-color: #0077cc; color: white; padding: 20px 10px; text-align: center;">
-  <div style="margin-bottom: 10px;">
-    © 2025 DuckData. All rights reserved.
-  </div>
-  <div style="display: flex; justify-content: center; gap: 20px; align-items: center; flex-wrap: wrap;">
-    <a href="privacy" style="color: white; display: flex; align-items: center; gap: 5px;">
-      <i data-lucide="shield-check" style="width: 16px; height: 16px;"></i> Privacy Policy
-    </a>
-    <a href="about" style="color: white; display: flex; align-items: center; gap: 5px;">
-      <i data-lucide="info" style="width: 16px; height: 16px;"></i> About Us
-    </a>
-  </div>
-</footer>
+  <footer>
+    <div style="margin-bottom: 10px;">
+      © 2025 DuckData. All rights reserved.
+    </div>
+    <div style="display: flex; justify-content: center; gap: 20px; align-items: center; flex-wrap: wrap;">
+      <a href="privacy.html"><i data-lucide="shield-check"></i> Privacy Policy</a>
+      <a href="about.html"><i data-lucide="info"></i> About Us</a>
+    </div>
+  </footer>
 
   <script>
     lucide.createIcons();
