@@ -15,7 +15,7 @@ body {
 header {
   position: sticky;
   top: 0;
-  background-color: #377ee2;
+  background-color: hsl(215, 100%, 81%);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   padding: 4px 10px;
   z-index: 1000;
@@ -170,7 +170,7 @@ h2 {
 
 /* Footer */
 footer {
-  background-color: #0077cc;
+  background-color: #47b2ff;
   color: white;
   padding: 20px 10px;
   text-align: center;
