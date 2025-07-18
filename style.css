@@ -6,7 +6,7 @@
 }
 body {
   font-family: 'Inter', sans-serif;
-  background: linear-gradient(to bottom, #e6f0ff 0%, #ffffff 40%);
+  background: linear-gradient(to bottom, #ffffff 0%, #ffffff 40%);
   color: #1a1a1a;
   line-height: 1.6;
 }
@@ -74,7 +74,7 @@ nav a:hover {
 .hero {
   text-align: center;
   padding: 100px 20px 60px;
-  background: linear-gradient(to right, #e0e7ff, #f4f7ff);
+  background: linear-gradient(to right, #ffffff, #ffffff);
 }
 .hero h1 {
   font-size: 2.8rem;
