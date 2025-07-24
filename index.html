@@ -117,7 +117,7 @@ nav {
   <!--  -->
  <!-- Floating Schedule Button -->
 <a href=".//contact-us-form" 
-   class="floating-call-button" target="_blank">
+   class="floating-call-button" id="callButton">
   📞 Schedule a Call
 </a>
 
@@ -210,6 +210,20 @@ nav {
     const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
     menuToggle.setAttribute('aria-expanded', !isExpanded);
     nav.classList.toggle('show');
+  });
+      const callButton = document.getElementById("callButton");
+
+  window.addEventListener("scroll", () => {
+    const scrollY = window.scrollY || window.pageYOffset;
+    const windowHeight = window.innerHeight;
+    const bodyHeight = document.body.offsetHeight;
+
+    // If user scrolled to bottom (or near), hide button
+    if (scrollY + windowHeight >= bodyHeight - 20) {
+      callButton.style.display = "none";
+    } else {
+      callButton.style.display = "block";
+    }
   });
     </script>
 </footer>
