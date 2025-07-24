@@ -8,7 +8,46 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
+<style>/* Hide hamburger by default */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+}
 
+nav {
+  display: flex;
+  gap: 20px;
+}
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    /* Adjust top to match header height */
+    top: 60px; 
+    right: 10px;
+    background: white;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    z-index: 9999;
+  }
+  nav.show {
+    display: flex;
+  }
+  .menu-toggle {
+    display: block;
+  }
+}</style>
   <!-- Header -->
  <header>
   <div class="logo" onclick="location.href='index'">
@@ -16,9 +55,9 @@
   </div>
   <nav>
     <a href="index">Home</a>
-    <a href="services">Services</a>
     <a href="projects">Projects</a>
     <a href="contact">Contact</a>
+    <a href="about">About Us</a>
   </nav>
 </header>
   <!-- Services Section -->
