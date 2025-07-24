@@ -1,6 +1,25 @@
-const toggle = document.getElementById("menuToggle");
-const menu = document.getElementById("rightMenu");
+  lucide.createIcons();
+  function handleSubmit(event) {
+      event.preventDefault();
+      const form = event.target;
+      const data = new FormData(form);
+      fetch(form.action, {
+        method: form.method,
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      }).then(response => {
+        document.getElementById('form-status').textContent = response.ok ? 'Thanks for your message!' : 'Oops! Something went wrong.';
+        if (response.ok) form.reset();
+      }).catch(() => {
+        document.getElementById('form-status').textContent = 'Oops! Something went wrong.';
+      });
+    }
+     function closePopup() {
+    document.getElementById("whatsapp-popup").style.display = "none";
+  }
 
-toggle.addEventListener("click", () => {
-  menu.style.display = menu.style.display === "block" ? "none" : "block";
-});
+  window.addEventListener("load", () => {
+    document.getElementById("whatsapp-popup").style.display = "block";
+  });
+
+ 
