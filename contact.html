@@ -5,72 +5,158 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact Us | DuckData</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="contact.css">
   <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="icon" href="favicon.png">
 </head>
 <body>
-  <style>
-  /* Desktop Navigation */
+<script> * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  background: #f5faff;
+  color: #1a1a1a;
+}
+
+/* Header */
+header {
+  background-color: #0077cc;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.logo img {
+  height: 40px;
+  cursor: pointer;
+}
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
 nav {
   display: flex;
   gap: 20px;
 }
-
-/* Hide hamburger by default */
-.menu-toggle {
-  display: none;
-  font-size: 28px;
-  cursor: pointer;
+nav a {
   color: white;
+  text-decoration: none;
+  font-weight: 500;
 }
-
-/* Mobile Styles */
 @media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
   nav {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 60px; /* Adjust based on header height */
+    top: 60px;
     right: 10px;
-    background-color: #ffffff;
+    background-color: white;
     box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-    padding: 15px;
+    padding: 10px;
     border-radius: 8px;
     z-index: 9999;
-    align-items: flex-end; /* Align links to the right */
-    text-align: right;
-    width: fit-content;
   }
-
   nav.show {
     display: flex;
   }
-
-  .menu-toggle {
-    display: block;
-  }
-
   nav a {
-    padding: 10px 0;
-    font-size: 16px;
     color: #000;
-    text-decoration: none;
+    padding: 10px 0;
   }
 }
 
-  </style>
+/* Contact Section */
+.contact-section {
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+.contact-section h2 {
+  font-size: 2.2rem;
+  color: #0047ab;
+  margin-bottom: 20px;
+}
+.contact-section p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+.email-link, .call-button {
+  display: inline-block;
+  background-color: #0077cc;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 12px 20px;
+  margin: 10px;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+.email-link:hover, .call-button:hover {
+  background-color: #005fa3;
+}
+
+/* Footer */
+footer {
+  background-color: #0077cc;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+}
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.footer-links a:hover {
+  text-decoration: underline;
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+.social-icons img {
+  width: 24px;
+  height: 24px;
+}
+</script>
   <!-- Header -->
-<header>
-  <div class="logo" onclick="location.href='index.html'">
-    <img src=".//dudckdatalogo.png" alt="DuckData Logo" height="40">
-  </div>
-  <nav>
-    <a href="index">Home</a>
-    <a href="services">Services</a>
-    <a href="projects">Projects</a>
-    <a href="about">Projects</a>
-  </nav>
-</header>
+  <header>
+    <div class="logo" onclick="location.href='index.html'">
+      <img src="./dudckdatalogo.png" alt="DuckData Logo" height="40">
+    </div>
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <nav id="primary-navigation">
+      <a href="index">Home</a>
+      <a href="services">Services</a>
+      <a href="projects">Projects</a>
+      <a href="about">About Us</a>
+    </nav>
+  </header>
 
   <!-- Contact Section -->
   <main class="contact-section">
@@ -81,8 +167,6 @@ nav {
       📧 contact@duckdata.in
     </a>
 
-    <br><br>
-
     <a href="https://docs.google.com/forms/d/e/1FAIpQLScai3XG2wRqEGRVplhmmB3ahHSzt4IPq9UmPFXbO3fLK-ymbw/viewform?usp=sf_link"
        target="_blank" class="call-button">
       📞 Schedule a Call
@@ -90,37 +174,29 @@ nav {
   </main>
 
   <!-- Footer -->
-<footer style="background-color: #0077cc; color: white; padding: 20px 10px; text-align: center;">
-  <div style="margin-bottom: 10px;">
-    © 2025 DuckData. All rights reserved.
-  </div>
-  <div style="display: flex; justify-content: center; gap: 20px; align-items: center; flex-wrap: wrap;">
-    <a href="privacy" style="color: white; display: flex; align-items: center; gap: 5px;">
-      <i data-lucide="shield-check" style="width: 16px; height: 16px;"></i> Privacy Policy
-    </a>
-    <a href="about" style="color: white; display: flex; align-items: center; gap: 5px;">
-      <i data-lucide="info" style="width: 16px; height: 16px;"></i> About Us
-    </a>
-  </div>
-    <!-- Social Media Icons -->
-  <div class="social-icons" style="display: flex; justify-content: center; gap: 15px; margin-top: 10px;">
-    <a href="https://x.com/duckdata_in" target="_blank">
-      <img src="./xlogo.webp" alt="Twitter" style="width: 24px; height: 24px;">
-    </a>
-    <a href="https://instagram.com/duckdata.in" target="_blank">
-      <img src="./instagram.png" alt="Telegram" style="width: 24px; height: 24px;">
-    </a>
-    <a href="https://www.youtube.com/@DuckData" target="_blank">
-      <img src="./youtube.webp" alt="YouTube" style="width: 24px; height: 24px;">
-    </a>
-      <a href="https://www.youtube.com/@DuckData" target="_blank">
-      <img src="./youtube.webp" alt="Telegram" style="width: 24px; height: 24px;">
-    </a>
-  </div>
+  <footer>
+    <div>© 2025 DuckData. All rights reserved.</div>
+    <div class="footer-links">
+      <a href="privacy"><i data-lucide="shield-check"></i> Privacy Policy</a>
+      <a href="about"><i data-lucide="info"></i> About Us</a>
+    </div>
+    <div class="social-icons">
+      <a href="https://x.com/duckdata_in" target="_blank"><img src="./xlogo.webp" alt="X" /></a>
+      <a href="https://instagram.com/duckdata.in" target="_blank"><img src="./instagram.png" alt="Instagram" /></a>
+      <a href="https://www.youtube.com/@DuckData" target="_blank"><img src="./youtube.webp" alt="YouTube" /></a>
+    </div>
   </footer>
 
   <script>
     lucide.createIcons();
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.getElementById('primary-navigation');
+
+    toggle.addEventListener('click', () => {
+      const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', !isExpanded);
+      nav.classList.toggle('show');
+    });
   </script>
 </body>
 </html>
