@@ -3,12 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Projects | DuckData</title>
+  <title>DuckData — Data That Trains Intelligence </title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <script src="script.js"></script>
+</head>
+<body>
   <style>
-  /* Desktop Navigation */
+  
+   /* Desktop Navigation */
 nav {
   display: flex;
   gap: 20px;
@@ -55,75 +62,150 @@ nav {
     text-decoration: none;
   }
 }
+  .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+    }
 
-  </style>
-</head>
-<body>
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+    }
 
-  <!-- Header -->
-  <header>
+    .project {
+      margin-bottom: 60px;
+    }
+
+    .project h2 {
+      font-size: 1.8rem;
+      color: #0077b6;
+    }
+
+    .project p {
+      line-height: 1.7;
+      margin-top: 10px;
+    }
+
+    .images {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 15px;
+    }
+
+    .images img {
+      width: 300px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      pointer-events: none;
+      user-select: none;
+    }
+
+    .images[oncontextmenu] {
+      -webkit-user-drag: none;
+    }
+
+    .links {
+      margin-top: 20px;
+    }
+
+    .links a {
+      display: inline-block;
+      margin-right: 15px;
+      text-decoration: none;
+      color: white;
+      background-color: #0077b6;
+      padding: 10px 16px;
+      border-radius: 6px;
+      font-weight: 500;
+    }
+
+    .links a:hover {
+      background-color: #005f94;
+    }</style>
+    <header>
     <div class="logo">
       <a href="index">
         <img src="./dudckdatalogo.png" alt="DuckData Logo" />
       </a>
     </div>
-    <div class="menu-toggle">☰</div>
-    <nav>
-      <a href="index">Home</a>
-      <a href="about">About us</a>
-      <a href="contact">Contact</a>
-    
-    </nav>
+   <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-navigation">☰</button>
+  <nav id="primary-navigation">
+    <a href="index">Home</a>
+    <a href="projects">Projects</a>
+    <a href="about">About Us</a>
+    <a href="contact">Contact</a>
+  </nav>
   </header>
-  <!-- Hero Section -->
-<section class="fade-in">
-    <h1 class="section-title">Sample Projects</h1>
-    <div class="projects">
-      <div class="project">
-        <h3>🚗 Traffic Sign Detection</h3>
-        <p>
-          A dataset of over 10,000 labeled images featuring Indian traffic signs captured in varied conditions. Used in real-time vehicle guidance and autonomous driving systems.
-        </p>
-      </div>
+ <div class="container">
+    <h1>Our Projects</h1>
 
-      <div class="project">
-        <h3>🤝 Gesture Recognition</h3>
-        <p>
-          This dataset includes 200+ HD videos of hand gestures with labeled frames. Built for ML models handling sign language interpretation and human-computer interaction.
-        </p>
-      </div>
+    <!-- Project 1 -->
+    <div class="project">
+      <h2>Project: Exam Copy Detection Using AI</h2>
+      <p>
+        This project leverages deep learning to identify potential malpractice in written exam copies.
+        By analyzing scanned handwritten answer sheets, the system detects similarities, repeated content, and abnormal writing styles across different papers.
+        The dataset includes hundreds of annotated exam sheets labeled for similarity. This solution aids universities and boards in ensuring academic integrity at scale.
+      </p>
 
-      <div class="project">
-        <h3>🛒 Retail Object Detection</h3>
-        <p>
-          Captures 5,000+ product shelf images from retail stores. Used to train inventory-checking and checkout-free retail vision systems with bounding box annotations.
-        </p>
+      <div class="images" oncontextmenu="return false;">
+        <img src=".//cp1.jpg" alt="Sample exam copy 1">
+        <img src=".//cp2.jpg" alt="Sample exam copy 2">
+        <img src=".//cp3.jpg" alt="Sample exam copy 3">
       </div>
+      <p>
+  We trained our model using a dataset of over <strong>1000 scanned exam sheets</strong> collected from various institutions. These images were manually annotated to highlight regions of interest such as writing similarities, answer structure, and suspected copied sections. 
+  Using convolutional neural networks (CNNs), the model was trained to detect visual patterns, handwriting overlaps, and layout duplications.
+  The training process involved:
+</p>
+<ul>
+  <li>Preprocessing: Noise removal, binarization, and alignment correction.</li>
+  <li>Augmentation: Rotation, scaling, and brightness variation to improve generalization.</li>
+  <li>Training: Fine-tuning a ResNet-based architecture using supervised learning with cross-entropy loss.</li>
+</ul>
 
-      <div class="project">
-        <h3>👷 Helmet Detection on Site</h3>
-        <p>
-          2,500+ images showing workers with and without helmets on real construction sites. Designed for AI-driven safety compliance checks in industrial zones.
-        </p>
-      </div>
-
-      <div class="project">
-        <h3>🚶 Pedestrian Path Tracking</h3>
-        <p>
-          Videos and stills captured in urban areas with annotated walking paths and movement trails. Ideal for smart city and surveillance ML models.
-        </p>
-      </div>
-
-      <div class="project">
-        <h3>📦 E-commerce Product Recognition</h3>
-        <p>
-          Over 8,000 images of single and grouped e-commerce products with clean white/realistic backgrounds. Built to power catalog management AI pipelines.
-        </p>
+      <div class="links">
+        <a href="https://www.youtube.com/watch?v=example1" target="_blank">Watch Video</a>
+        <a href="https://duckdata.com/exam-copy-dataset" target="_blank">Learn More About Dataset</a>
       </div>
     </div>
-  </section>
 
-  <!-- Footer -->
+    <!-- Project 2 -->
+    <div class="project">
+      <h2>Project: Identifying Cleanliness of Closed Water Tank Using Machine Learning</h2>
+      <p>
+        This system uses image classification and environmental sensors to determine if a closed water tank requires cleaning.
+        By training on images from clean, semi-clean, and dirty tanks, the model predicts cleanliness level with high accuracy. This helps building managers and rural agencies automate water hygiene checks without opening tanks.
+      </p>
+
+      <div class="images" oncontextmenu="return false;">
+        <img src=".//wp1.jpg" alt="Clean tank image">
+        <img src=".//wp2.jpg" alt="Dirty tank image">
+      </div>
+      <p>
+  Our dataset included more than <strong>1000 labeled images</strong> of water tanks in various conditions — clean, semi-clean, and dirty.
+  These images were collected over several months using smartphones and inspection cameras in rural and urban areas. The images were categorized based on expert feedback.
+  The ML model was trained using:
+</p>
+<ul>
+  <li>Image classification techniques using MobileNet and SVM classifiers.</li>
+  <li>Features like algae patterns, turbidity, and sediment marks were extracted automatically.</li>
+  <li>Data augmentation techniques like mirroring and cropping helped improve model robustness.</li>
+</ul>
+
+      <div class="links">
+        <a href="https://www.youtube.com/watch?v=example2" target="_blank">Watch Video</a>
+        <a href="https://duckdata.com/water-tank-dataset" target="_blank">Learn More About Dataset</a>
+      </div>
+    </div>
+  </div>
+<!-- Footer Section -->
 <footer style="background-color: #0077cc; color: white; padding: 20px 10px; text-align: center;">
   <div style="margin-bottom: 10px;">
     © 2025 DuckData. All rights reserved.
@@ -151,11 +233,18 @@ nav {
       <img src="./youtube.webp" alt="Telegram" style="width: 24px; height: 24px;">
     </a>
   </div>
-
   <script>
-    document.querySelector('.menu-toggle').addEventListener('click', () => {
-      document.querySelector('nav').classList.toggle('show');
-    });
-  </script>
+      lucide.createIcons();
+  const menuToggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('nav');
+
+  menuToggle.addEventListener('click', () => {
+    const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+    menuToggle.setAttribute('aria-expanded', !isExpanded);
+    nav.classList.toggle('show');
+  });
+    </script>
+</footer>
 </body>
+
 </html>
