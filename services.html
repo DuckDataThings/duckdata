@@ -8,7 +8,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-<style>/* Hide hamburger by default */
+ <style>
+  /* Desktop Navigation */
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+/* Hide hamburger by default */
 .menu-toggle {
   display: none;
   font-size: 28px;
@@ -16,38 +23,41 @@
   color: white;
 }
 
-nav {
-  display: flex;
-  gap: 20px;
-}
-.menu-toggle {
-  display: none;
-  font-size: 28px;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
+/* Mobile Styles */
 @media (max-width: 768px) {
   nav {
     display: none;
     flex-direction: column;
     position: absolute;
-    /* Adjust top to match header height */
-    top: 60px; 
+    top: 60px; /* Adjust based on header height */
     right: 10px;
-    background: white;
-    border-radius: 8px;
-    padding: 10px;
+    background-color: #ffffff;
     box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    padding: 15px;
+    border-radius: 8px;
     z-index: 9999;
+    align-items: flex-end; /* Align links to the right */
+    text-align: right;
+    width: fit-content;
   }
+
   nav.show {
     display: flex;
   }
+
   .menu-toggle {
     display: block;
   }
-}</style>
+
+  nav a {
+    padding: 10px 0;
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+  }
+}
+
+  </style>
   <!-- Header -->
  <header>
   <div class="logo" onclick="location.href='index'">
@@ -80,8 +90,8 @@ nav {
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer style="background-color: #0077cc; color: white; padding: 20px 10px; text-align: center;">
+ <!-- Footer Section -->
+<footer style="background-color: #0077cc; color: white; padding: 20px 10px; text-align: center;">
   <div style="margin-bottom: 10px;">
     © 2025 DuckData. All rights reserved.
   </div>
@@ -93,10 +103,26 @@ nav {
       <i data-lucide="info" style="width: 16px; height: 16px;"></i> About Us
     </a>
   </div>
-</footer>
+    <!-- Social Media Icons -->
+  <div class="social-icons" style="display: flex; justify-content: center; gap: 15px; margin-top: 10px;">
+    <a href="https://x.com/duckdata_in" target="_blank">
+      <img src="./xlogo.webp" alt="Twitter" style="width: 24px; height: 24px;">
+    </a>
+    <a href="https://instagram.com/duckdata.in" target="_blank">
+      <img src="./instagram.png" alt="Telegram" style="width: 24px; height: 24px;">
+    </a>
+    <a href="https://www.youtube.com/@DuckData" target="_blank">
+      <img src="./youtube.webp" alt="YouTube" style="width: 24px; height: 24px;">
+    </a>
+      <a href="https://www.youtube.com/@DuckData" target="_blank">
+      <img src="./youtube.webp" alt="Telegram" style="width: 24px; height: 24px;">
+    </a>
+  </div>
+  </footer>
 
   <!-- JS for Menu -->
   <script>
+       lucide.createIcons();
     document.querySelector('.menu-toggle').addEventListener('click', () => {
       document.querySelector('nav').classList.toggle('show');
     });
