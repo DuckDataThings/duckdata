@@ -3,11 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About Us | DuckData</title>
+  <title>DuckData — Data That Trains Intelligence </title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="https://unpkg.com/lucide@latest"></script>
-  <style>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <script src="script.js"></script>
+</head>
+<body>
+   <style>
   /* Desktop Navigation */
 nav {
   display: flex;
@@ -57,42 +63,59 @@ nav {
 }
 
   </style>
-</head>
-<body>
-
-  <!-- Header -->
-  <header>
+    <header>
     <div class="logo">
       <a href="index">
         <img src="./dudckdatalogo.png" alt="DuckData Logo" />
       </a>
     </div>
-    <div class="menu-toggle">☰</div>
-    <nav>
-      <a href="index">Home</a>
-      <a href="projects">Projects</a>
-      <a href="contact">Contact</a>
-    </nav>
+   <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-navigation">☰</button>
+  <nav id="primary-navigation">
+    <a href="index">Home</a>
+    <a href="projects">Projects</a>
+    <a href="about">About Us</a>
+    <a href="contact">Contact</a>
+  </nav>
   </header>
-  <!-- Hero Section -->
-  <section class="hero">
-    <h1>About Us</h1>
-    <p>
-      DuckData was started by a group of passionate engineers who share a common vision for the future of artificial intelligence.
-      With the goal of making AI more accessible and effective, DuckData works in close collaboration with researchers and companies around the world.
-      We specialize in providing custom-built datasets to power machine learning systems across various industries.
-      From traffic detection to gesture recognition, our data supports real-world AI applications.
-      <br><br>
-      The foundation of DuckData is built on the idea that smart data is the backbone of any intelligent system.
-      We believe in precision, quality, and adaptability. With that in mind, our team works round the clock to collect, process, and deliver the exact datasets our clients require.
-      <br><br>
-      DuckData was founded by <b>Mr. Chethan Kumar and Mr. Prakash </b>,  committed to bridging the gap between industry needs and advanced AI research.
-      His leadership continues to guide the company in its mission to innovate and enable the next generation of data-driven solutions.
-    </p>
-  </section>
+ <section class="hero" style="font-family: 'Inter', sans-serif; padding: 2rem; background: #f9f9f9; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); max-width: 800px; margin: auto;">
+  <h1 style="font-size: 2.2rem; margin-bottom: 1rem; color: #222;">About Us</h1>
+  <p style="font-size: 1.05rem; line-height: 1.8; color: #333;">
+    DuckData began as a simple conversation between engineers who were deeply frustrated with the lack of high-quality, context-specific datasets for machine learning. We noticed that while AI was evolving rapidly, the fuel that powers it—data—was often outdated, generic, or simply not good enough.
+    <br><br>
+    Our mission is simple but powerful: to create rich, reliable, and ready-to-use datasets that bridge the gap between theory and real-world AI. We focus especially on image and video datasets because visual data drives many of today’s most important innovations—from autonomous vehicles to gesture recognition, from smart surveillance to healthcare diagnostics.
+    <br><br>
+    Why did we start? Because we believe smart data is the missing link. We wanted to make it easier for researchers, startups, and companies to access high-quality, tailor-made data without spending months collecting or cleaning it. And because we knew that a better AI future requires a stronger data foundation.
+    <br><br>
+    Every dataset we build is handcrafted with attention to detail, scalability, and accuracy. We don’t just collect data—we design it with purpose.
+  </p>
 
-  <!-- Footer -->
-<footer style="background-color: #0077cc; color: white; padding: 15px 8px; text-align: center;">
+  <div style="margin-top: 2rem;">
+    <span style="font-weight: 600; color: #444;">Follow us on:</span><br><br>
+    <a href="https://instagram.com" target="_blank" style="text-decoration: none; margin-right: 10px;">
+      <button style="padding: 10px 16px; background-color: #E1306C; border: none; color: white; border-radius: 8px; cursor: pointer;">
+        Instagram
+      </button>
+    </a>
+    <a href="https://x.com" target="_blank" style="text-decoration: none; margin-right: 10px;">
+      <button style="padding: 10px 16px; background-color: #000000; border: none; color: white; border-radius: 8px; cursor: pointer;">
+        X (Twitter)
+      </button>
+    </a>
+    <a href="https://youtube.com" target="_blank" style="text-decoration: none; margin-right: 10px;">
+      <button style="padding: 10px 16px; background-color: #FF0000; border: none; color: white; border-radius: 8px; cursor: pointer;">
+        YouTube
+      </button>
+    </a>
+    <a href="https://linkedin.com" target="_blank" style="text-decoration: none;">
+      <button style="padding: 10px 16px; background-color: #0077B5; border: none; color: white; border-radius: 8px; cursor: pointer;">
+        LinkedIn
+      </button>
+    </a>
+  </div>
+</section>
+
+<!-- Footer Section -->
+<footer style="background-color: #0077cc; color: white; padding: 20px 10px; text-align: center;">
   <div style="margin-bottom: 10px;">
     © 2025 DuckData. All rights reserved.
   </div>
@@ -104,12 +127,33 @@ nav {
       <i data-lucide="info" style="width: 16px; height: 16px;"></i> About Us
     </a>
   </div>
-</footer>
-
+    <!-- Social Media Icons -->
+  <div class="social-icons" style="display: flex; justify-content: center; gap: 15px; margin-top: 10px;">
+    <a href="https://x.com/duckdata_in" target="_blank">
+      <img src="./xlogo.webp" alt="Twitter" style="width: 24px; height: 24px;">
+    </a>
+    <a href="https://instagram.com/duckdata.in" target="_blank">
+      <img src="./instagram.png" alt="Telegram" style="width: 24px; height: 24px;">
+    </a>
+    <a href="https://www.youtube.com/@DuckData" target="_blank">
+      <img src="./youtube.webp" alt="YouTube" style="width: 24px; height: 24px;">
+    </a>
+      <a href="https://www.youtube.com/@DuckData" target="_blank">
+      <img src="./youtube.webp" alt="Telegram" style="width: 24px; height: 24px;">
+    </a>
+  </div>
   <script>
-    document.querySelector('.menu-toggle').addEventListener('click', () => {
-      document.querySelector('nav').classList.toggle('show');
-    });
-  </script>
+      lucide.createIcons();
+  const menuToggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('nav');
+
+  menuToggle.addEventListener('click', () => {
+    const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+    menuToggle.setAttribute('aria-expanded', !isExpanded);
+    nav.classList.toggle('show');
+  });
+    </script>
+</footer>
 </body>
+
 </html>
