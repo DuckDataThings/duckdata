@@ -3,12 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About Us | DuckData</title>
+  <title>Privacy Policy — DuckData</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="favicon.png">
   <script src="https://unpkg.com/lucide@latest"></script>
-  <style>
-   /* Desktop Navigation */
+  <script src="script.js"></script>
+</head>
+<body>
+  <header>
+    <style>
+  /* Desktop Navigation */
 nav {
   display: flex;
   gap: 20px;
@@ -57,50 +64,127 @@ nav {
 }
 
   </style>
-</head>
-<body>
-
-  <!-- Header -->
-  <header>
     <div class="logo">
-      <a href="index.html">
+      <a href="index">
         <img src="./dudckdatalogo.png" alt="DuckData Logo" />
       </a>
     </div>
-    <div class="menu-toggle">☰</div>
-    <nav>
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-navigation">☰</button>
+    <nav id="primary-navigation">
       <a href="index">Home</a>
-      <a href="about">About us</a>
+      <a href="projects">Projects</a>
+      <a href="about">About Us</a>
       <a href="contact">Contact</a>
     </nav>
   </header>
-  <!-- Hero Section -->
-  <section class="hero">
-    <h1>About Us</h1>
-    <p>
-      DuckData was started by a group of passionate engineers who share a common vision for the future of artificial intelligence.
-      With the goal of making AI more accessible and effective, DuckData works in close collaboration with researchers and companies around the world.
-      We specialize in providing custom-built datasets to power machine learning systems across various industries.
-      From traffic detection to gesture recognition, our data supports real-world AI applications.
-      <br><br>
-      The foundation of DuckData is built on the idea that smart data is the backbone of any intelligent system.
-      We believe in precision, quality, and adaptability. With that in mind, our team works round the clock to collect, process, and deliver the exact datasets our clients require.
-      <br><br>
-      DuckData was founded by <b>Mr. Chethan Kumar</b>, an engineering visionary committed to bridging the gap between industry needs and advanced AI research.
-      His leadership continues to guide the company in its mission to innovate and enable the next generation of data-driven solutions.
-    </p>
-  </section>
 
-  <!-- Footer -->
-  <footer>
-    <div style="margin-bottom: 10px;">&copy; 2025 DuckData. All rights reserved.</div>
-    <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
-      <a href="privacy"><i data-lucide="shield-check"></i> Privacy Policy</a>
-      <a href="about"><i data-lucide="info"></i> About Us</a>
-    </div>
+ <section class="privacy-policy">
+  <h1>Privacy Policy</h1>
+
+  <p>
+    At <span class="highlight">DuckData</span>, your privacy matters. This policy outlines what we collect, how we use it, and how we keep it safe — with zero nonsense and full transparency.
+  </p>
+
+  <h2>1. What We Collect</h2>
+  <p>
+    We collect only what’s necessary to deliver our services:
+    <ul>
+      <li>Your contact details when you reach out to us</li>
+      <li>Basic business or project info for dataset collaborations</li>
+      <li>Media data (images, videos) you provide for training datasets</li>
+    </ul>
+  </p>
+
+  <h2>2. Why We Collect It</h2>
+  <p>
+    We use the data you provide to:
+    <ul>
+      <li>Create and customize AI datasets for your needs</li>
+      <li>Communicate and collaborate on projects</li>
+      <li>Ensure dataset quality, traceability, and compliance</li>
+    </ul>
+  </p>
+
+  <h2>3. How We Protect It</h2>
+  <p>
+    We use secure cloud storage and internal access control. When handling sensitive data, we use:
+    <ul>
+      <li>Encryption during storage and transfer</li>
+      <li>Anonymization when required</li>
+      <li>Strict internal access policies</li>
+    </ul>
+  </p>
+
+  <h2>4. Who We Share It With</h2>
+  <p>
+    We do <strong>not</strong> sell your data. We only share data when:
+    <ul>
+      <li>You’ve explicitly agreed to share it</li>
+      <li>It’s required by law</li>
+      <li>We work with partners under binding confidentiality agreements</li>
+    </ul>
+  </p>
+
+  <h2>5. Your Control</h2>
+  <p>
+    You have full control over your data. You can:
+    <ul>
+      <li>Request access to any personal information we hold</li>
+      <li>Ask us to delete or update your data</li>
+      <li>Withdraw any consents you’ve given</li>
+    </ul>
+    To do this, just email us at <strong>duckdata.support@email.com</strong>.
+  </p>
+
+  <h2>6. Policy Updates</h2>
+  <p>
+    We may update this policy as we grow. All changes will be posted here with the latest date. No hidden terms. No shady practices.
+  </p>
+
+  <div class="updated-date">
+    Last updated: July 25, 2025
+  </div>
+ </section>
+
+ <!-- Footer Section -->
+<footer style="background-color: #0077cc; color: white; padding: 20px 10px; text-align: center;">
+  <div style="margin-bottom: 10px;">
+    © 2025 DuckData. All rights reserved.
+  </div>
+  <div style="display: flex; justify-content: center; gap: 20px; align-items: center; flex-wrap: wrap;">
+    <a href="privacy" style="color: white; display: flex; align-items: center; gap: 5px;">
+      <i data-lucide="shield-check" style="width: 16px; height: 16px;"></i> Privacy Policy
+    </a>
+    <a href="about" style="color: white; display: flex; align-items: center; gap: 5px;">
+      <i data-lucide="info" style="width: 16px; height: 16px;"></i> About Us
+    </a>
+  </div>
+    <!-- Social Media Icons -->
+  <div class="social-icons" style="display: flex; justify-content: center; gap: 15px; margin-top: 10px;">
+    <a href="https://x.com/duckdata_in" target="_blank">
+      <img src="./xlogo.webp" alt="Twitter" style="width: 24px; height: 24px;">
+    </a>
+    <a href="https://instagram.com/duckdata.in" target="_blank">
+      <img src="./instagram.png" alt="Telegram" style="width: 24px; height: 24px;">
+    </a>
+    <a href="https://www.youtube.com/@DuckData" target="_blank">
+      <img src="./youtube.webp" alt="YouTube" style="width: 24px; height: 24px;">
+    </a>
+      <a href="https://www.youtube.com/@DuckData" target="_blank">
+      <img src="./youtube.webp" alt="Telegram" style="width: 24px; height: 24px;">
+    </a>
+  </div>
   </footer>
-
-
-
+    <script>
+      lucide.createIcons();
+      const menuToggle = document.querySelector('.menu-toggle');
+      const nav = document.querySelector('nav');
+      menuToggle.addEventListener('click', () => {
+        const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+        menuToggle.setAttribute('aria-expanded', !isExpanded);
+        nav.classList.toggle('show');
+      });
+    </script>
+ 
 </body>
 </html>
