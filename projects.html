@@ -1,259 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>DuckData — Data That Trains Intelligence </title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <script src="https://unpkg.com/lucide@latest"></script>
-  <link rel="icon" type="image/png" href="favicon.png">
-  <link rel="shortcut icon" href="favicon.ico">
-  <link rel="apple-touch-icon" href="favicon.png">
-  <script src="script.js"></script>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SYQ8H0V4G8"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<div class="container">
+  <h1>Our Projects</h1>
 
-  gtag('config', 'G-SYQ8H0V4G8');
-</script>
-</head>
-<body>
-  <style>
-  
-   /* Desktop Navigation */
-nav {
-  display: flex;
-  gap: 20px;
-}
+  <!-- Project 1 -->
+  <div class="project">
+    <h2>Exam Copy Detection Using AI</h2>
 
-/* Hide hamburger by default */
-.menu-toggle {
-  display: none;
-  font-size: 28px;
-  cursor: pointer;
-  color: white;
-}
+    <p>
+      We provide high-quality image datasets designed to train AI models for detecting exam copying behavior. 
+      The images shown are part of the data we deliver to support the development of AI systems focused on academic integrity. 
+      This project highlights the kind of specialized training data solutions we offer for machine learning and computer vision applications.
+    </p>
 
-/* Mobile Styles */
-@media (max-width: 768px) {
-  nav {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 60px; /* Adjust based on header height */
-    right: 10px;
-    background-color: #ffffff;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-    padding: 15px;
-    border-radius: 8px;
-    z-index: 9999;
-    align-items: flex-end; /* Align links to the right */
-    text-align: right;
-    width: fit-content;
-  }
-
-  nav.show {
-    display: flex;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-
-  nav a {
-    padding: 10px 0;
-    font-size: 16px;
-    color: #000;
-    text-decoration: none;
-  }
-}
-  .container {
-      max-width: 1100px;
-      margin: 40px auto;
-      padding: 20px;
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
-    }
-
-    h1 {
-      text-align: center;
-      font-size: 2.5rem;
-      margin-bottom: 40px;
-    }
-
-    .project {
-      margin-bottom: 60px;
-    }
-
-    .project h2 {
-      font-size: 1.8rem;
-      color: #0077b6;
-    }
-
-    .project p {
-      line-height: 1.7;
-      margin-top: 10px;
-    }
-
-    .images {
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-      margin-top: 15px;
-    }
-
-    .images img {
-      width: 300px;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      pointer-events: none;
-      user-select: none;
-    }
-
-    .images[oncontextmenu] {
-      -webkit-user-drag: none;
-    }
-
-    .links {
-      margin-top: 20px;
-    }
-
-    .links a {
-      display: inline-block;
-      margin-right: 15px;
-      text-decoration: none;
-      color: white;
-      background-color: #0077b6;
-      padding: 10px 16px;
-      border-radius: 6px;
-      font-weight: 500;
-    }
-
-    .links a:hover {
-      background-color: #005f94;
-    }</style>
-    <header>
-    <div class="logo">
-      <a href="index">
-        <img src="./dudckdatalogo.png" alt="DuckData Logo" />
-      </a>
-    </div>
-   <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-navigation">☰</button>
-  <nav id="primary-navigation">
-    <a href="index">Home</a>
-    <a href="projects">Projects</a>
-    <a href="about">About Us</a>
-    <a href="contact">Contact</a>
-  </nav>
-  </header>
- <div class="container">
-    <h1>Our Projects</h1>
-
-    <!-- Project 1 -->
-    <div class="project">
-      <h2>Exam Copy Detection Using AI</h2>
-      <p>
-        This project leverages deep learning to identify potential malpractice in written exam copies.
-        By analyzing scanned handwritten answer sheets, the system detects similarities, repeated content, and abnormal writing styles across different papers.
-        The dataset includes hundreds of annotated exam sheets labeled for similarity. This solution aids universities and boards in ensuring academic integrity at scale.
-      </p>
-
-      <div class="images" oncontextmenu="return false;">
-        <img src=".//cp1.jpg" alt="Sample exam copy 1">
-        <img src=".//cp2.jpg" alt="Sample exam copy 2">
-        <img src=".//cp3.jpg" alt="Sample exam copy 3">
-      </div>
-      <p>
-  We trained our model using a dataset of over <strong>1000 scanned exam sheets</strong> collected from various institutions. These images were manually annotated to highlight regions of interest such as writing similarities, answer structure, and suspected copied sections. 
-  Using convolutional neural networks (CNNs), the model was trained to detect visual patterns, handwriting overlaps, and layout duplications.
-  The training process involved:
-</p>
-<ul>
-  <li>Preprocessing: Noise removal, binarization, and alignment correction.</li>
-  <li>Augmentation: Rotation, scaling, and brightness variation to improve generalization.</li>
-  <li>Training: Fine-tuning a ResNet-based architecture using supervised learning with cross-entropy loss.</li>
-</ul>
-
-      <div class="links">
-        <a href="https://www.youtube.com/watch?v=example1" target="_blank">Watch Video</a>
-        <a href="https://duckdata.com/exam-copy-dataset" target="_blank">Learn More About Dataset</a>
-      </div>
+    <div class="images" oncontextmenu="return false;">
+      <img src="./cp1.jpg" alt="Sample exam copy 1">
+      <img src="./cp2.jpg" alt="Sample exam copy 2">
+      <img src="./cp3.jpg" alt="Sample exam copy 3">
     </div>
 
-    <!-- Project 2 -->
-    <div class="project">
-      <h2>Identifying Cleanliness of Closed Water Tank Using Machine Learning</h2>
-      <p>
-        This system uses image classification and environmental sensors to determine if a closed water tank requires cleaning.
-        By training on images from clean, semi-clean, and dirty tanks, the model predicts cleanliness level with high accuracy. This helps building managers and rural agencies automate water hygiene checks without opening tanks.
-      </p>
-
-      <div class="images" oncontextmenu="return false;">
-        <img src=".//wp1.jpg" alt="Clean tank image">
-        <img src=".//wp2.jpg" alt="Dirty tank image">
-      </div>
-      <p>
-  Our dataset included more than <strong>1000 labeled images</strong> of water tanks in various conditions — clean, semi-clean, and dirty.
-  These images were collected over several months using smartphones and inspection cameras in rural and urban areas. The images were categorized based on expert feedback.
-  The ML model was trained using:
-</p>
-<ul>
-  <li>Image classification techniques using MobileNet and SVM classifiers.</li>
-  <li>Features like algae patterns, turbidity, and sediment marks were extracted automatically.</li>
-  <li>Data augmentation techniques like mirroring and cropping helped improve model robustness.</li>
-</ul>
-
-      <div class="links">
-        <a href="https://www.youtube.com/watch?v=example2" target="_blank">Watch Video</a>
-        <a href="https://duckdata.com/water-tank-dataset" target="_blank">Learn More About Dataset</a>
-      </div>
+    <div class="links">
+      <a href="https://drive.google.com/file/d/1veEvkn0OJeTXgd3qofP9n4D4kxMXMkQw/view?usp=sharing" target="_blank">Watch Video</a>
     </div>
   </div>
-<!-- Footer Section -->
-<footer style="background-color: #0077cc; color: white; padding: 20px 10px; text-align: center;">
-  <div style="margin-bottom: 10px;">
-    © 2025 DuckData. All rights reserved.
-  </div>
-  <div style="display: flex; justify-content: center; gap: 20px; align-items: center; flex-wrap: wrap;">
-    <a href="privacy" style="color: white; display: flex; align-items: center; gap: 5px;">
-      <i data-lucide="shield-check" style="width: 16px; height: 16px;"></i> Privacy Policy
-    </a>
-    <a href="about" style="color: white; display: flex; align-items: center; gap: 5px;">
-      <i data-lucide="info" style="width: 16px; height: 16px;"></i> About Us
-    </a>
-  </div>
-    <!-- Social Media Icons -->
-  <div class="social-icons" style="display: flex; justify-content: center; gap: 15px; margin-top: 10px;">
-    <a href="https://x.com/duckdata_in" target="_blank">
-      <img src="./xlogo.webp" alt="Twitter" style="width: 24px; height: 24px;">
-    </a>
-    <a href="https://instagram.com/duckdata.in" target="_blank">
-      <img src="./instagram.png" alt="Telegram" style="width: 24px; height: 24px;">
-    </a>
-    <a href="https://www.youtube.com/@DuckData" target="_blank">
-      <img src="./youtube.webp" alt="YouTube" style="width: 24px; height: 24px;">
-    </a>
-      <a href="https://www.youtube.com/@DuckData" target="_blank">
-      <img src="./youtube.webp" alt="Telegram" style="width: 24px; height: 24px;">
-    </a>
-  </div>
-  <script>
-      lucide.createIcons();
-  const menuToggle = document.querySelector('.menu-toggle');
-  const nav = document.querySelector('nav');
 
-  menuToggle.addEventListener('click', () => {
-    const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
-    menuToggle.setAttribute('aria-expanded', !isExpanded);
-    nav.classList.toggle('show');
-  });
-    </script>
-</footer>
-</body>
+  <!-- Project 2 -->
+  <div class="project">
+    <h2>Identifying Cleanliness of Closed Water Tank Using Machine Learning</h2>
 
-</html>
+    <p>
+      We deliver high-quality image datasets tailored for training machine learning models to assess the cleanliness of closed water tanks. 
+      The data we provide supports the development of AI systems that can automatically identify and classify cleanliness levels, 
+      helping to ensure hygiene and safety in water storage. This project highlights the kind of specialized data solutions we offer 
+      for computer vision applications.
+    </p>
+
+    <div class="images" oncontextmenu="return false;">
+      <img src="./wp1.jpg" alt="Clean tank image">
+      <img src="./wp2.jpg" alt="Dirty tank image">
+    </div>
+
+    <div class="links">
+      <a href="https://drive.google.com/file/d/1veEvkn0OJeTXgd3qofP9n4D4kxMXMkQw/view?usp=sharing" target="_blank">Watch Video</a>
+    </div>
+  </div>
+</div>
