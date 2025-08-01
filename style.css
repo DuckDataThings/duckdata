@@ -98,24 +98,33 @@ h2 {
 }
 
 /* Services */
-.services {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-}
-.service {
-  flex: 1 1 300px;
-  background: #ffffff;
-  padding: 25px;
-  border-radius: 12px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
-  transition: transform 0.3s;
-}
-.service:hover {
-  transform: translateY(-5px);
-}
+ .services {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
 
+  .service {
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  .service:hover {
+    background: #e0e0e0;
+  }
+
+  .service-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+  }
+
+  .service.active .service-content {
+    max-height: 200px; /* adjust depending on content */
+  }
 /* Steps Grid */
 .steps-grid {
   display: grid;
@@ -360,3 +369,28 @@ nav {
       font-weight: 600;
       color: #0077b6;
     }
+#terms {
+  background: #f9f9f9;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-top: 2rem;
+}
+
+#terms h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+#terms ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#terms li {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+#terms strong {
+  color: #1a1a1a;
+}
