@@ -10,15 +10,6 @@
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="apple-touch-icon" href="favicon.png">
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SYQ8H0V4G8"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-SYQ8H0V4G8');
-</script>
   <script src="script.js"></script>
 </head>
 <body>
@@ -94,18 +85,29 @@ nav {
 
   <!-- Services section -->
   <section id="services">
-    <h2>Services</h2>
-    <div class="services">
-      <div class="service">
-        <h3>Custom Image Datasets</h3>
-        <p>Tailor-made image datasets for ML/AI. Fully labeled and organized as per your specs.</p>
-      </div>
-      <div class="service">
-        <h3>Custom Video Datasets</h3>
-        <p>Clean, annotated video datasets built exactly to your project needs.</p>
+  <h2>Services</h2>
+  <div class="services">
+    <div class="service" onclick="toggleService(this)">
+      <h3>Custom Image Datasets</h3>
+      <div class="service-content">
+        <p>Our Custom Image Datasets are fully labeled, organized, and built to your specific requirements, ensuring maximum training accuracy.
+Whether you're working on facial recognition, object detection, or medical imaging — we deliver data that performs.</p>
       </div>
     </div>
-  </section>
+    <div class="service" onclick="toggleService(this)">
+      <h3>Custom Video Datasets</h3>
+      <div class="service-content">
+        <p>Our Custom Video Datasets provide clean, annotated video footage ideal for action recognition, surveillance, and behavior analysis.
+We ensure every frame is relevant, labeled, and optimized for efficient model training.
+All datasets are reviewed manually and by AI to ensure high precision and consistency.
+We also support multi-format delivery, time-stamped annotations, and cloud access.
+Whether you're a startup, research lab, or enterprise, our data powers your AI with confidence.
+We collaborate closely to understand your goals and build datasets that fit like a glove.
+With DuckData, you're not just buying data — you're investing in smarter outcomes.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
   <!-- Workflow -->
 <!-- Workflow -->
@@ -127,24 +129,25 @@ nav {
  <!-- Floating Schedule Button -->
 <a href=".//contact-us-form" 
    class="floating-call-button" id="callButton">
-  📞 Schedule a Call
+  📞 Enquire Now
 </a>
 
 <div id="whatsapp-popup" class="whatsapp-popup">
   <button class="popup-close" onclick="closePopup()">✕</button>
   <p>📢 Join our WhatsApp Channel to never miss an update!</p>
-  <a href="https://whatsapp.com/channel/0029Vb6UMBO7T8bSbCRkIB2p" target="_blank" class="popup-join-btn">
-    ✅ Join Now
-  </a>
+  <a href="intent://channel/0029Vb6UMBO7T8bSbCRkIB2p#Intent;scheme=https;package=com.whatsapp;action=android.intent.action.VIEW;end">
+  Join Our WhatsApp Channel
+</a>
+
 </div>
 
   <!-- Projects -->
   <section id="projects">
     <h2>Sample Projects</h2>
     <div class="projects">
-      <div class="project"> <a href="projects"><h3>Exam copy detection using AI</h3></a></div>
-      <div class="project"> <a href="projects"><h3>Identifying Cleanliness of Closed Water Tank Using Machine 
-Learning Techniques</h3></a></div
+      <div class="project">🚗 Traffic Sign Detection - 10K labeled images</div>
+      <div class="project">🤝 Gesture Recognition - 200+ HD videos</div>
+      <div class="project">🛒 Retail Object Detection - 5K bounding box images</div>
     </div>
   </section>
 
@@ -157,7 +160,7 @@ Learning Techniques</h3></a></div
 
   <div style="margin-bottom: 25px;">
     <a href="mailto:contact@duckdata.in" style="color: #0059b3; font-weight: bold; font-size: 20px; text-decoration: none;">
-      📧 contact@duckdat.in
+      📧 contact@duckdata.in
     </a>
   </div>
 
@@ -191,8 +194,8 @@ Learning Techniques</h3></a></div
     <a href="privacy" style="color: white; display: flex; align-items: center; gap: 5px;">
       <i data-lucide="shield-check" style="width: 16px; height: 16px;"></i> Privacy Policy
     </a>
-    <a href="about" style="color: white; display: flex; align-items: center; gap: 5px;">
-      <i data-lucide="info" style="width: 16px; height: 16px;"></i> About Us
+    <a href="terms-of-use" style="color: white; display: flex; align-items: center; gap: 5px;">
+      <i data-lucide="info" style="width: 16px; height: 16px;"></i> Terms of Use
     </a>
   </div>
     <!-- Social Media Icons -->
@@ -206,10 +209,6 @@ Learning Techniques</h3></a></div
     <a href="https://www.youtube.com/@DuckData" target="_blank">
       <img src="./youtube.webp" alt="YouTube" style="width: 24px; height: 24px;">
     </a>
-      <a href="https://www.youtube.com/@DuckData" target="_blank">
-      <img src="./youtube.webp" alt="Telegram" style="width: 24px; height: 24px;">
-    </a>
-  </div>
   </footer>
   <script>
       lucide.createIcons();
@@ -235,6 +234,9 @@ Learning Techniques</h3></a></div
       callButton.style.display = "block";
     }
   });
+    function toggleService(element) {
+    element.classList.toggle('active');
+  }
     </script>
 </body>
 
