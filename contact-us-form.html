@@ -2,21 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contact Us | DuckData</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DuckData — Data That Trains Intelligence </title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <script src="https://unpkg.com/lucide@latest"></script>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SYQ8H0V4G8"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-SYQ8H0V4G8');
-</script>
-  <style>
-    /* Desktop Navigation */
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <script src="script.js"></script>
+</head>
+<body>
+   <style>
+  /* Desktop Navigation */
 nav {
   display: flex;
   gap: 20px;
@@ -64,74 +62,28 @@ nav {
   }
 }
 
-
-    .container {
-      max-width: 960px;
-      margin: 60px auto;
-      padding: 40px;
-      background-color: #ffffff;
-      border-radius: 16px;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
-    }
-
-    h1 {
-      text-align: center;
-      font-size: 32px;
-      color: #0066cc;
-      margin-bottom: 30px;
-    }
-
-    iframe {
-      width: 100%;
-      height: 800px;
-      border: none;
-      margin-top: 40px;
-      border-radius: 8px;
-    }
-
-    footer {
-      background-color: #0077cc;
-      padding: 20px 10px;
-      text-align: center;
-      font-size: 14px;
-      color: white;
-    }
-
-    footer a {
-      color: white;
-      margin: 0 10px;
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
-    }
   </style>
-</head>
-<body>
-
   <header>
     <div class="logo">
-      <a href="index.html">
+      <a href="index">
         <img src="./dudckdatalogo.png" alt="DuckData Logo" />
       </a>
     </div>
-    <div class="menu-toggle">☰</div>
-    <nav>
-      <a href="index">Home</a>
-      <a href="about">About us</a>
-       <a href="Projects">Projects</a>
-    </nav>
+   <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-navigation">☰</button>
+  <nav id="primary-navigation">
+    <a href="index">Home</a>
+    <a href="projects">Projects</a>
+    <a href="about">About Us</a>
+    <a href="services">Services</a>
+  </nav>
   </header>
-<div class="container">
+ <div class="container">
   <h1>Schedule a Call</h1>
   <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScai3XG2wRqEGRVplhmmB3ahHSzt4IPq9UmPFXbO3fLK-ymbw/viewform?embedded=true" loading="lazy">
     Loading…
   </iframe>
 </div>
+
 <!-- Footer Section -->
 <footer style="background-color: #0077cc; color: white; padding: 20px 10px; text-align: center;">
   <div style="margin-bottom: 10px;">
@@ -141,8 +93,8 @@ nav {
     <a href="privacy" style="color: white; display: flex; align-items: center; gap: 5px;">
       <i data-lucide="shield-check" style="width: 16px; height: 16px;"></i> Privacy Policy
     </a>
-    <a href="about" style="color: white; display: flex; align-items: center; gap: 5px;">
-      <i data-lucide="info" style="width: 16px; height: 16px;"></i> About Us
+    <a href="terms-of-use" style="color: white; display: flex; align-items: center; gap: 5px;">
+      <i data-lucide="info" style="width: 16px; height: 16px;"></i> Terms of Use
     </a>
   </div>
     <!-- Social Media Icons -->
@@ -156,19 +108,19 @@ nav {
     <a href="https://www.youtube.com/@DuckData" target="_blank">
       <img src="./youtube.webp" alt="YouTube" style="width: 24px; height: 24px;">
     </a>
-      <a href="https://www.youtube.com/@DuckData" target="_blank">
-      <img src="./youtube.webp" alt="Telegram" style="width: 24px; height: 24px;">
-    </a>
-  </div>
-  </footer>
+      
   <script>
+      lucide.createIcons();
+  const menuToggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('nav');
 
-<script>
-  document.querySelector('.menu-toggle').addEventListener('click', () => {
-  document.querySelector('nav').classList.toggle('show');
-});
-
-</script>
-
+  menuToggle.addEventListener('click', () => {
+    const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+    menuToggle.setAttribute('aria-expanded', !isExpanded);
+    nav.classList.toggle('show');
+  });
+    </script>
+</footer>
 </body>
+
 </html>
