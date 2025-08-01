@@ -3,21 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Services | DuckData</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>DuckData — Data That Trains Intelligence </title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SYQ8H0V4G8"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-SYQ8H0V4G8');
-</script>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <script src="script.js"></script>
 </head>
 <body>
- <style>
+<style>
   /* Desktop Navigation */
 nav {
   display: flex;
@@ -67,20 +63,21 @@ nav {
 }
 
   </style>
-  <!-- Header -->
- <header>
-  <div class="logo" onclick="location.href='index'">
-    <img src=".//dudckdatalogo.png" alt="DuckData Logo" height="40">
-  </div>
-  <nav>
+  <header>
+    <div class="logo">
+      <a href="index">
+        <img src="./dudckdatalogo.png" alt="DuckData Logo" />
+      </a>
+    </div>
+   <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-navigation">☰</button>
+  <nav id="primary-navigation">
     <a href="index">Home</a>
     <a href="projects">Projects</a>
-    <a href="contact">Contact</a>
     <a href="about">About Us</a>
+    <a href="services">Services</a>
   </nav>
-</header>
-  <!-- Services Section -->
-  <section>
+  </header>
+   <section>
     <h1 class="section-title">Our Services</h1>
     <div class="services">
       <div class="service">
@@ -98,9 +95,9 @@ nav {
       </div>
     </div>
   </section>
-
- <!-- Footer Section -->
-  <footer style="background-color: #0077cc; color: white; padding: 20px 10px; text-align: center;">
+ 
+<!-- Footer Section -->
+<footer style="background-color: #0077cc; color: white; padding: 20px 10px; text-align: center;">
   <div style="margin-bottom: 10px;">
     © 2025 DuckData. All rights reserved.
   </div>
@@ -123,14 +120,20 @@ nav {
     <a href="https://www.youtube.com/@DuckData" target="_blank">
       <img src="./youtube.webp" alt="YouTube" style="width: 24px; height: 24px;">
     </a>
+      
   </div>
-  </footer>
-  <!-- JS for Menu -->
   <script>
-       lucide.createIcons();
-    document.querySelector('.menu-toggle').addEventListener('click', () => {
-      document.querySelector('nav').classList.toggle('show');
-    });
-  </script>
+      lucide.createIcons();
+  const menuToggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('nav');
+
+  menuToggle.addEventListener('click', () => {
+    const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+    menuToggle.setAttribute('aria-expanded', !isExpanded);
+    nav.classList.toggle('show');
+  });
+    </script>
+</footer>
 </body>
+
 </html>
