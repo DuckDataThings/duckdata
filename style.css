@@ -245,45 +245,40 @@ footer a:hover {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #25D366;
-  color: white;
-  padding: 20px 20px 15px;
+  background: #e6f7ec;
+  border: 1px solid #25d366;
+  padding: 1rem 1.2rem;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  font-family: 'Inter', sans-serif;
-  z-index: 9999;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
   max-width: 300px;
-  display: none;
-  animation: fadeIn 0.4s ease;
-  box-sizing: border-box;
+  z-index: 1000;
+  font-family: sans-serif;
 }
 
 .popup-close {
-  position: absolute;
-  top: 8px;
-  right: 10px;
-  background: transparent;
+  background: none;
   border: none;
-  color: white;
   font-size: 18px;
+  position: absolute;
+  top: 6px;
+  right: 10px;
   cursor: pointer;
-  font-weight: bold;
 }
 
-.popup-join-btn {
+.whatsapp-button {
   display: inline-block;
-  margin-top: 12px;
-  padding: 8px 14px;
-  background-color: white;
-  color: #25D366;
+  margin-top: 10px;
+  padding: 8px 12px;
+  background: #25d366;
+  color: #fff;
   text-decoration: none;
-  font-weight: 600;
-  border-radius: 6px;
+  border-radius: 8px;
+  font-weight: bold;
   font-size: 14px;
 }
 
-.popup-join-btn:hover {
-  background-color: #e8fff0;
+.whatsapp-button:hover {
+  background: #1ebe5b;
 }
 
 @keyframes fadeIn {
