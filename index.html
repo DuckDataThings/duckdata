@@ -73,8 +73,10 @@ nav {
   <nav id="primary-navigation">
     <a href="index">Home</a>
     <a href="projects">Projects</a>
-    <a href="about">About Us</a>
     <a href="contact">Contact</a>
+    <a href="services">Services</a>
+    <a href="https://labs.duckdata.in">LABS</a>
+    <a href="about">About Us</a>
   </nav>
   </header>
  <!-- Hero intro section -->
@@ -83,25 +85,57 @@ nav {
     <p>We deliver the image and video datasets you need—exactly how you want them.</p>
   </section>
 
-  <!-- Services section -->
-  <section id="services">
+ <!-- Services Section -->
+<section id="services">
   <h2>Services</h2>
   <div class="services">
+
+    <!-- Service 1 -->
     <div class="service" onclick="toggleService(this)">
       <h3>Custom Image Datasets</h3>
       <div class="service-content">
-        <p>Our Custom Image Datasets are fully labeled, organized, and built to your specific requirements, ensuring maximum training accuracy.
-Whether you're working on facial recognition, object detection, or medical imaging — we deliver data that performs. <a href="projects"Read More></a></p>
+        <p>We deliver fully labeled and organized image datasets built exactly to your specifications. 
+        Perfect for facial recognition, object detection, or medical imaging — ensuring your AI models get the most accurate training data possible.</p>
+        <a href="projects" class="read-more-link">Read More</a>
       </div>
     </div>
+
+    <!-- Service 2 -->
     <div class="service" onclick="toggleService(this)">
       <h3>Custom Video Datasets</h3>
       <div class="service-content">
-        <p>Clean, annotated video datasets built exactly to your project needs.</p>
+        <p>We provide lean, high-quality video datasets — containing only the clips you need. 
+        Every video is annotated with precise labels, timestamps, and metadata, tailored entirely to your project’s goals, 
+        whether for AI training, computer vision, or analytics.</p>
+        <a href="projects" class="read-more-link">Read More</a>
       </div>
     </div>
+
+    <!-- Service 3 -->
+    <div class="service" onclick="toggleService(this)">
+      <h3>DaaS – Data as a Service</h3>
+      <div class="service-content">
+        <p>We transform raw, unstructured data — images, videos, recordings — into clean, structured datasets. 
+        All data is human-verified, quality-checked, and ready to integrate into your AI or analytics pipeline.</p>
+        <a href="daas" class="read-more-link">Read More</a>
+      </div>
+    </div>
+
+    <!-- Service 4 -->
+    <div class="service" onclick="toggleService(this)">
+      <h3>LABS – Your Project Partner</h3>
+      <div class="service-content">
+        <p>Designed for students, researchers, and innovators — we help turn your ideas into working prototypes. 
+        From deep learning to embedded systems, our team handles design, development, and delivery.</p>
+        <a href="https://labs.duckdata.in" class="read-more-link" target="_blank" rel="noopener noreferrer">Read More</a>
+      </div>
+    </div>
+
   </div>
 </section>
+
+    
+
 
   <!-- Workflow -->
 <!-- Workflow -->
@@ -126,20 +160,6 @@ Whether you're working on facial recognition, object detection, or medical imagi
   📞 Enquire Now
 </a>
 
-<!-- WhatsApp Floating Button -->
-<a
-  href="https://wa.me/your_number_or_channel_link"
-  class="whatsapp-float"
-  target="_blank"
-  rel="noopener"
-  aria-label="Chat on WhatsApp"
->
-  <img
-    src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
-    alt="WhatsApp"
-    style="width:48px;height:48px;"
-  />
-</a>
 
 
 
@@ -147,8 +167,8 @@ Whether you're working on facial recognition, object detection, or medical imagi
   <section id="projects">
     <h2>Sample Projects</h2>
     <div class="projects">
-      <div class="project">🚗 Traffic Sign Detection - 10K labeled images</div>
-      <div class="project">🤝 Gesture Recognition - 200+ HD videos</div>
+      <div class="project">💧 Smart Sanitation: Data for ML-Powered Tank Monitoring</div>
+      <div class="project">🤖 AI Surveillance Dataset for Exam Monitoring<</div>
       <div class="project">🛒 Retail Object Detection - 5K bounding box images</div>
     </div>
   </section>
@@ -196,8 +216,8 @@ Whether you're working on facial recognition, object detection, or medical imagi
     <a href="privacy" style="color: white; display: flex; align-items: center; gap: 5px;">
       <i data-lucide="shield-check" style="width: 16px; height: 16px;"></i> Privacy Policy
     </a>
-    <a href="about" style="color: white; display: flex; align-items: center; gap: 5px;">
-      <i data-lucide="info" style="width: 16px; height: 16px;"></i> About Us
+    <a href="terms-of-use" style="color: white; display: flex; align-items: center; gap: 5px;">
+      <i data-lucide="info" style="width: 16px; height: 16px;"></i> Terms-of-use
     </a>
   </div>
     <!-- Social Media Icons -->
@@ -211,9 +231,7 @@ Whether you're working on facial recognition, object detection, or medical imagi
     <a href="https://www.youtube.com/@DuckData" target="_blank">
       <img src="./youtube.webp" alt="YouTube" style="width: 24px; height: 24px;">
     </a>
-      <a href="https://www.youtube.com/@DuckData" target="_blank">
-      <img src="./youtube.webp" alt="Telegram" style="width: 24px; height: 24px;">
-    </a>
+    
   </div>
   </footer>
   <script>
