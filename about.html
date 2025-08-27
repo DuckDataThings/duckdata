@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -162,3 +163,169 @@ nav {
 </body>
 
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DuckData — Data That Trains Intelligence </title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <script src="script.js"></script>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SYQ8H0V4G8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SYQ8H0V4G8');
+</script>
+</head>
+<body>
+   <style>
+  /* Desktop Navigation */
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+/* Hide hamburger by default */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Adjust based on header height */
+    right: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    padding: 15px;
+    border-radius: 8px;
+    z-index: 9999;
+    align-items: flex-end; /* Align links to the right */
+    text-align: right;
+    width: fit-content;
+  }
+
+  nav.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav a {
+    padding: 10px 0;
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+  }
+}
+
+  </style>
+    <header>
+    <div class="logo">
+      <a href="index">
+        <img src="./dudckdatalogo.png" alt="DuckData Logo" />
+      </a>
+    </div>
+   <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-navigation">☰</button>
+  <nav id="primary-navigation">
+    <a href="index">Home</a>
+    <a href="projects">Projects</a>
+    <a href="about">About Us</a>
+    <a href="contact">Contact</a>
+  </nav>
+  </header>
+ <section class="hero" style="font-family: 'Inter', sans-serif; padding: 2rem; background: #f9f9f9; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); max-width: 800px; margin: auto;">
+  <h1 style="font-size: 2.2rem; margin-bottom: 1rem; color: #222;">About Us</h1>
+  <p style="font-size: 1.05rem; line-height: 1.8; color: #333;">
+    DuckData began as a simple conversation between engineers who were deeply frustrated with the lack of high-quality, context-specific datasets for machine learning. We noticed that while AI was evolving rapidly, the fuel that powers it—data—was often outdated, generic, or simply not good enough.
+    <br><br>
+    Our mission is simple but powerful: to create rich, reliable, and ready-to-use datasets that bridge the gap between theory and real-world AI. We focus especially on image and video datasets because visual data drives many of today’s most important innovations—from autonomous vehicles to gesture recognition, from smart surveillance to healthcare diagnostics.
+    <br><br>
+    Why did we start? Because we believe smart data is the missing link. We wanted to make it easier for researchers, startups, and companies to access high-quality, tailor-made data without spending months collecting or cleaning it. And because we knew that a better AI future requires a stronger data foundation.
+    <br><br>
+    Every dataset we build is handcrafted with attention to detail, scalability, and accuracy. We don’t just collect data—we design it with purpose.
+  </p>
+
+  <div style="margin-top: 2rem;">
+    <span style="font-weight: 600; color: #444;">Follow us on:</span><br><br>
+    <a href="https://instagram.com/duckdata.in" target="_blank" style="text-decoration: none; margin-right: 10px;">
+      <button style="padding: 10px 16px; background-color: #E1306C; border: none; color: white; border-radius: 8px; cursor: pointer;">
+        Instagram
+      </button>
+    </a>
+    <a href="https://x.com/duckdata_in" target="_blank" style="text-decoration: none; margin-right: 10px;">
+      <button style="padding: 10px 16px; background-color: #000000; border: none; color: white; border-radius: 8px; cursor: pointer;">
+        X 
+      </button>
+    </a>
+    <a href="https://www.youtube.com/@DuckData" target="_blank" style="text-decoration: none; margin-right: 10px;">
+      <button style="padding: 10px 16px; background-color: #FF0000; border: none; color: white; border-radius: 8px; cursor: pointer;">
+        YouTube
+      </button>
+    </a>
+    <a href="https://whatsapp.com/channel/0029Vb6UMBO7T8bSbCRkIB2p" target="_blank" style="text-decoration: none;">
+      <button style="padding: 10px 16px; background-color: #0077B5; border: none; color: white; border-radius: 8px; cursor: pointer;">
+        Whatsapp
+      </button>
+    </a>
+  </div>
+</section>
+
+<!-- Footer Section -->
+<footer style="background-color: #0077cc; color: white; padding: 20px 10px; text-align: center;">
+  <div style="margin-bottom: 10px;">
+    © 2025 DuckData. All rights reserved.
+  </div>
+  <div style="display: flex; justify-content: center; gap: 20px; align-items: center; flex-wrap: wrap;">
+    <a href="privacy" style="color: white; display: flex; align-items: center; gap: 5px;">
+      <i data-lucide="shield-check" style="width: 16px; height: 16px;"></i> Privacy Policy
+    </a>
+    <a href="terms-of-use" style="color: white; display: flex; align-items: center; gap: 5px;">
+      <i data-lucide="info" style="width: 16px; height: 16px;"></i> Terms of Use
+    </a>
+  </div>
+    <!-- Social Media Icons -->
+  <div class="social-icons" style="display: flex; justify-content: center; gap: 15px; margin-top: 10px;">
+    <a href="https://x.com/duckdata_in" target="_blank">
+      <img src="./xlogo.webp" alt="Twitter" style="width: 24px; height: 24px;">
+    </a>
+    <a href="https://instagram.com/duckdata.in" target="_blank">
+      <img src="./instagram.png" alt="Telegram" style="width: 24px; height: 24px;">
+    </a>
+    <a href="https://www.youtube.com/@DuckData" target="_blank">
+      <img src="./youtube.webp" alt="YouTube" style="width: 24px; height: 24px;">
+    </a>
+  </footer>
+  <script>
+      lucide.createIcons();
+  const menuToggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('nav');
+
+  menuToggle.addEventListener('click', () => {
+    const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+    menuToggle.setAttribute('aria-expanded', !isExpanded);
+    nav.classList.toggle('show');
+  });
+    </script>
+</body>
+
+</html>
+>>>>>>> d0df90e (First commit from VS Code)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -124,3 +125,131 @@ nav {
 </body>
 
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DuckData — Data That Trains Intelligence </title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <script src="script.js"></script>
+</head>
+<body>
+   <style>
+  /* Desktop Navigation */
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+/* Hide hamburger by default */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Adjust based on header height */
+    right: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    padding: 15px;
+    border-radius: 8px;
+    z-index: 9999;
+    align-items: flex-end; /* Align links to the right */
+    text-align: right;
+    width: fit-content;
+  }
+
+  nav.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav a {
+    padding: 10px 0;
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+  }
+}
+
+  </style>
+  <header>
+    <div class="logo">
+      <a href="index">
+        <img src="./dudckdatalogo.png" alt="DuckData Logo" />
+      </a>
+    </div>
+   <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-navigation">☰</button>
+  <nav id="primary-navigation">
+    <a href="index">Home</a>
+    <a href="projects">Projects</a>
+    <a href="about">About Us</a>
+    <a href="services">Services</a>
+  </nav>
+  </header>
+ <div class="container">
+  <h1>Schedule a Call</h1>
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScai3XG2wRqEGRVplhmmB3ahHSzt4IPq9UmPFXbO3fLK-ymbw/viewform?embedded=true" loading="lazy">
+    Loading…
+  </iframe>
+</div>
+
+<!-- Footer Section -->
+<footer style="background-color: #0077cc; color: white; padding: 20px 10px; text-align: center;">
+  <div style="margin-bottom: 10px;">
+    © 2025 DuckData. All rights reserved.
+  </div>
+  <div style="display: flex; justify-content: center; gap: 20px; align-items: center; flex-wrap: wrap;">
+    <a href="privacy" style="color: white; display: flex; align-items: center; gap: 5px;">
+      <i data-lucide="shield-check" style="width: 16px; height: 16px;"></i> Privacy Policy
+    </a>
+    <a href="terms-of-use" style="color: white; display: flex; align-items: center; gap: 5px;">
+      <i data-lucide="info" style="width: 16px; height: 16px;"></i> Terms of Use
+    </a>
+  </div>
+    <!-- Social Media Icons -->
+  <div class="social-icons" style="display: flex; justify-content: center; gap: 15px; margin-top: 10px;">
+    <a href="https://x.com/duckdata_in" target="_blank">
+      <img src="./xlogo.webp" alt="Twitter" style="width: 24px; height: 24px;">
+    </a>
+    <a href="https://instagram.com/duckdata.in" target="_blank">
+      <img src="./instagram.png" alt="Telegram" style="width: 24px; height: 24px;">
+    </a>
+    <a href="https://www.youtube.com/@DuckData" target="_blank">
+      <img src="./youtube.webp" alt="YouTube" style="width: 24px; height: 24px;">
+    </a>
+      
+  <script>
+      lucide.createIcons();
+  const menuToggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('nav');
+
+  menuToggle.addEventListener('click', () => {
+    const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+    menuToggle.setAttribute('aria-expanded', !isExpanded);
+    nav.classList.toggle('show');
+  });
+    </script>
+</footer>
+</body>
+
+</html>
+>>>>>>> d0df90e (First commit from VS Code)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -347,3 +348,354 @@ keywordList.forEach((word,i) => {
 
 
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LABS – Your Project Partner/title>
+<style>
+/* RESET & BASE */
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{
+  font-family: 'Segoe UI', sans-serif;
+  background:#0a0d1a;
+  color:#e8e9ed;
+  scroll-behavior:smooth;
+}
+a{text-decoration:none;color:inherit}
+section{padding:80px 20px;max-width:1100px;margin:auto;}
+
+/* NAVIGATION */
+nav{
+  position:fixed;top:0;left:0;width:100%;
+  background:#0a0d1aee;
+  backdrop-filter: blur(10px);
+  display:flex;justify-content:space-between;align-items:center;
+  padding:15px 30px;z-index:1000;
+  border-bottom:1px solid rgba(255,255,255,0.07);
+}
+nav .logo{
+  font-weight:bold;
+  font-size:1.3em;
+  color:#4dd5ff;
+  letter-spacing:1px;
+  user-select:none;
+  display:flex;align-items:center;
+  gap:8px;
+}
+nav ul{display:flex;gap:24px;list-style:none;}
+nav ul li a{color:#fff;transition:color 0.3s;}
+nav ul li a:hover{color:#4dd5ff;}
+.hamburger{
+  display:none;flex-direction:column;gap:6px;cursor:pointer;
+}
+.hamburger span{
+  width:26px;height:3px;background:#fff;border-radius:3px;
+}
+@media(max-width:768px){
+  nav ul{
+    position:absolute;top:60px;right:0;
+    background:#0a0d1aee;
+    flex-direction:column;
+    width:200px;
+    max-height:0;overflow:hidden;
+    transition:max-height 0.3s ease;
+    text-align:right;
+    box-shadow:0 6px 20px #0002;
+  }
+  nav ul.open{max-height:300px;border:1px solid rgba(255,255,255,0.08);}
+  .hamburger{display:flex;}
+}
+
+/* HERO SECTION */
+.hero{
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;min-height:100vh;position:relative;overflow:hidden;
+}
+.hero img{
+  width:120px;height:auto;margin-bottom:22px;
+  filter:drop-shadow(0 0 18px #4dd5ff) brightness(1.15);
+  background:rgba(0,0,0, 0.06);border-radius:22px;
+}
+.hero h1{
+  font-size:3em;color:#fff;text-shadow:0 0 15px #4dd5ff;
+}
+.keywords{
+  display:flex;gap:10px;justify-content:center;flex-wrap:wrap;
+  margin:20px 0 10px 0;font-size:1em;
+}
+.keyword-tag{
+  background:rgba(77,213,255,0.18);
+  color:#4dd5ff;
+  border-radius:8px;
+  padding:4px 13px;
+  font-weight:600;
+  letter-spacing:0.7px;
+  margin-bottom:5px;
+  box-shadow:0 0 10px rgba(77,213,255,0.09);
+  opacity:0;transform:translateY(20px);
+  animation:fadeKeyword 1s forwards;
+}
+@keyframes fadeKeyword{
+  to{opacity:1;transform:translateY(0);}
+}
+.hero p{
+  font-size:1.3em;margin-top:10px;color:#9ce0ff;
+}
+#particles{
+  position:absolute;top:0;left:0;width:100%;height:100%;
+  background:radial-gradient(ellipse at center, #111 0%, #0a0d1a 100%);
+  z-index:-1;overflow:hidden;
+}
+.particle{
+  position:absolute;
+  border-radius:50%;
+  background:rgba(77,213,255,0.6);
+  animation:float 10s infinite;
+}
+@keyframes float{
+  0%{transform:translateY(0);}
+  50%{transform:translateY(-20px);}
+  100%{transform:translateY(0);}
+}
+
+/* ANIMATION ON SCROLL */
+.fade-in{opacity:0;transform:translateY(30px);transition:all 1s ease;}
+.fade-in.visible{opacity:1;transform:translateY(0);}
+
+/* SECTION DESCRIPTION */
+.section-desc{
+  color:#93c7f3;
+  margin:12px 0 24px 0;
+  font-size:1.09em;
+  line-height:1.5;
+}
+
+/* SERVICES */
+.services-cards{
+  display:grid;gap:20px;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  margin-top:20px;
+}
+.service-card{
+  background:#141b33;
+  border-radius:10px;padding:20px;text-align:center;
+  border:1px solid rgba(255,255,255,0.05);
+  box-shadow:0 0 20px rgba(77,213,255,0.05);
+  transition:transform 0.3s, box-shadow 0.3s;
+}
+.service-card:hover{
+  transform:translateY(-6px) scale(1.022);
+  box-shadow:0 0 32px rgba(77,213,255,0.22);
+}
+.service-card h3{color:#4dd5ff;margin-bottom:10px;}
+
+/* PROCESS TIMELINE */
+.process-timeline{
+  display:flex;overflow-x:auto;gap:30px;padding:10px;
+  scrollbar-width:thin;scrollbar-color:#4dd5ff transparent;
+}
+.process-step{
+  min-width:160px;background:#141b33;padding:20px;border-radius:10px;
+  text-align:center;flex-shrink:0;
+  box-shadow:0 0 20px rgba(77,213,255,0.07);
+}
+.process-step span{
+  font-size:2em;display:block;margin-bottom:8px;color:#f4c32e;
+}
+
+/* CONTACT BUTTONS */
+.contact-btns{
+  display:flex;gap:20px;flex-wrap:wrap;justify-content:center;
+}
+.contact-btn{
+  background:linear-gradient(90deg,#4dd5ff,#007ea7);
+  color:#031c24;font-weight:bold;padding:12px 24px;border-radius:6px;
+  transition:transform 0.2s, background 0.3s;
+  font-size:1.06em;
+  letter-spacing:0.03em;
+  box-shadow:0 2px 10px #183e5645;
+}
+.contact-btn:hover{
+  transform:scale(1.05);
+  background:linear-gradient(90deg,#f4c32e,#ffae00);
+  color:#111;
+}
+
+/* FOOTER */
+footer{text-align:center;font-size:0.95em;color:#7588aa;padding:22px 0 12px 0;}
+
+/* SMOOTH SECTION SPACING FIX */
+@media(max-width:500px){
+  .hero h1{font-size:2em;}
+  section{padding:52px 7vw;}
+  .process-step{min-width:130px;}
+  .keywords{font-size:0.93em;}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="logo">
+    <img src=".//ducklabslogo.png" alt="DuckLabs Logo" style="height:40px; width:auto; filter: drop-shadow(0 0 6px #4dd5ff);">
+  </div>
+  <ul>
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="hamburger"><span></span><span></span><span></span></div>
+</nav>
+
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div id="particles"></div>
+  <!-- Replace 'ducks_logo.png' below with your actual logo filename -->
+  <h1>DuckLabs – The Innovators Hub</h1>
+  <div class="keywords">
+    <!-- keywords will be injected here by JS -->
+  </div>
+  <p>Turning Ideas into Reality</p>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="fade-in">
+  <h2>About Us</h2>
+  <div class="section-desc">
+    At DuckLabs, we build innovative projects and custom prototypes for students and creators worldwide. We bring your ideas to life with expert engineering and hands-on support
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="fade-in">
+  <h2>Services</h2>
+  <div class="section-desc">
+    We specialize in cutting-edge solutions for AI/ML, web development, and embedded electronics.<br>
+    Our expert team brings your prototypes to life, offering support throughout your innovation journey.
+  </div>
+  <div class="services-cards">
+    <div class="service-card">
+      <h3>AI/ML Solutions</h3>
+      <p>
+        Custom AI and machine learning models, automation, data insights,<br>
+        chatbots, and generative AI—making your ideas smart and scalable.
+      </p>
+    </div>
+    <div class="service-card">
+      <h3>Web Development</h3>
+      <p>
+        Modern, responsive websites and web apps, UI/UX design, real-time features,<br>
+        and expert consulting—robust digital solutions, built fast.
+      </p>
+    </div>
+    <div class="service-card">
+      <h3>Embedded Systems</h3>
+      <p>
+        Embedded prototyping and device creation, hardware-software integration,<br>
+        and electronics innovation for education and research projects.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<!-- PROCESS -->
+<section id="process" class="fade-in">
+  <h2>Our Process</h2>
+  <div class="section-desc">
+    Simple steps from your first idea to final delivery—built for speed and clarity.<br>
+    Watch your project move live from concept through to working solution.
+  </div>
+  <div class="process-timeline">
+    <div class="process-step"><span>💡</span>Idea</div>
+    <div class="process-step"><span>📞</span>Consultation</div>
+    <div class="process-step"><span>⚙️</span>Development</div>
+    <div class="process-step"><span>📦</span>Delivery</div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="fade-in">
+  <h2>Contact Us</h2>
+  <div class="section-desc">
+    Reach out anytime.<br>
+    Connect for instant support or start your journey!
+  </div>
+  <div class="contact-btns">
+    <a href="https://wa.me/1234567890" target="_blank" class="contact-btn">WhatsApp</a>
+    <a href="mailto:info@ducklabs.com" class="contact-btn">Email</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>Made by DuckData</footer>
+
+<script>
+// Hamburger Menu
+const ham=document.querySelector('.hamburger');
+const navMenu=document.querySelector('nav ul');
+ham.addEventListener('click',()=>{
+  navMenu.classList.toggle('open');
+});
+
+// Close menu after click (on mobile)
+navMenu.querySelectorAll('a').forEach(link=>{
+  link.addEventListener('click',()=>navMenu.classList.remove('open'));
+});
+
+// Scroll Animations (IntersectionObserver)
+const faders=document.querySelectorAll('.fade-in');
+const observer=new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add('visible');
+    }
+  });
+},{threshold:0.17});
+faders.forEach(f=>observer.observe(f));
+
+// Particles in Hero
+function createParticles(){
+  const container=document.getElementById('particles');
+  for(let i=0;i<25;i++){
+    const p=document.createElement('div');
+    p.classList.add('particle');
+    const size=Math.random()*4+2;
+    p.style.width=`${size}px`;
+    p.style.height=`${size}px`;
+    p.style.top=`${Math.random()*100}%`;
+    p.style.left=`${Math.random()*100}%`;
+    p.style.animationDuration=`${7+Math.random()*5}s`;
+    p.style.opacity=0.56+Math.random()*0.4;
+    container.appendChild(p);
+  }
+}
+createParticles();
+
+// Keywords (skills) under logo
+const keywordList = [
+  'Electronics','Web Development','AI/ML','Aerospace',
+  'Prototyping','Consulting','Innovation',
+];
+const kwContainer = document.querySelector(".keywords");
+keywordList.forEach((word,i) => {
+  const el = document.createElement("span");
+  el.className = "keyword-tag";
+  el.textContent = word;
+  el.style.animationDelay = `${.15*i+.3}s`;
+  kwContainer.appendChild(el);
+});
+</script>
+</body>
+</html>
+
+
+
+>>>>>>> d0df90e (First commit from VS Code)

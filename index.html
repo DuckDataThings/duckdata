@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -267,3 +268,275 @@ nav {
 
 
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DuckData — Data that Trains Intelligence </title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <script src="script.js"></script>
+</head>
+<body>
+  <style>
+  /* Desktop Navigation */
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+/* Hide hamburger by default */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Adjust based on header height */
+    right: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    padding: 15px;
+    border-radius: 8px;
+    z-index: 9999;
+    align-items: flex-end; /* Align links to the right */
+    text-align: right;
+    width: fit-content;
+  }
+
+  nav.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav a {
+    padding: 10px 0;
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+  }
+}
+
+  </style>
+    <header>
+    <div class="logo">
+      <a href="index">
+        <img src="./dudckdatalogo.png" alt="DuckData Logo" />
+      </a>
+    </div>
+   <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-navigation">☰</button>
+  <nav id="primary-navigation">
+    <a href="index">Home</a>
+    <a href="datasets">DataSets</a>
+    <a href="daas">DaaS</a>
+    <a href="https://labs.duckdata.in">LABS</a>
+    <a href="about">About Us</a>
+  </nav>
+  </header>
+ <!-- Hero intro section -->
+  <section class="hero">
+    <h1>Smart. Simple. Custom AI Data on Demand.</h1>
+    <p>We deliver the image and video datasets you need—exactly how you want them.</p>
+  </section>
+
+ <!-- Services Section -->
+<section id="services">
+  <h2>Services</h2>
+  <div class="services">
+
+    <!-- Service 1 -->
+    <div class="service" onclick="toggleService(this)">
+      <h3>Custom Image Datasets</h3>
+      <div class="service-content">
+        <p>We deliver fully labeled and organized image datasets built exactly to your specifications. 
+        Perfect for facial recognition, object detection, or medical imaging — ensuring your AI models get the most accurate training data possible.</p>
+        <a href="projects" class="read-more-link">Read More</a>
+      </div>
+    </div>
+
+    <!-- Service 2 -->
+    <div class="service" onclick="toggleService(this)">
+      <h3>Custom Video Datasets</h3>
+      <div class="service-content">
+        <p>We provide lean, high-quality video datasets — containing only the clips you need. 
+        Every video is annotated with precise labels, timestamps, and metadata, tailored entirely to your project’s goals, 
+        whether for AI training, computer vision, or analytics.</p>
+        <a href="projects" class="read-more-link">Read More</a>
+      </div>
+    </div>
+
+    <!-- Service 3 -->
+    <div class="service" onclick="toggleService(this)">
+      <h3>DaaS – Data as a Service</h3>
+      <div class="service-content">
+        <p>We transform raw, unstructured data — images, videos, recordings — into clean, structured datasets. 
+        All data is human-verified, quality-checked, and ready to integrate into your AI or analytics pipeline.</p>
+        <a href="daas" class="read-more-link">Read More</a>
+      </div>
+    </div>
+
+    <!-- Service 4 -->
+    <div class="service" onclick="toggleService(this)">
+      <h3>LABS – Your Project Partner</h3>
+      <div class="service-content">
+        <p>Designed for students, researchers, and innovators — we help turn your ideas into working prototypes. 
+        From deep learning to embedded systems, our team handles design, development, and delivery.</p>
+        <a href="https://labs.duckdata.in" class="read-more-link" target="_blank" rel="noopener noreferrer">Read More</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    
+
+
+  <!-- Workflow -->
+<!-- Workflow -->
+<section id="how">
+  <h2>How It Works</h2>
+  <div class="steps-grid">
+    <div class="step-box">1. Visit our website</div>
+    <div class="step-box">2. Contact with our team/ email us</div>
+    <div class="step-box">3. Our team will contact you within 3 hours</div>
+    <div class="step-box">4. Discuss your dataset requirements with us</div>
+    <div class="step-box">5. We will process and receive your order</div>
+    <div class="step-box">6. Make payment after receiving the dataset</div>
+    <div class="step-box">7. You will gain full access to the dataset</div>
+  </div>
+</section>
+
+
+  <!--  -->
+ <!-- Floating Schedule Button -->
+<a href=".//contact-us-form" 
+   class="floating-call-button" id="callButton">
+  📞 Enquire Now
+</a>
+
+
+
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Sample Projects</h2>
+    <div class="projects">
+      <div class="project">💧 Smart Sanitation: Data for ML-Powered Tank Monitoring</div>
+      <div class="project">🤖 AI Surveillance Dataset for Exam Monitoring<</div>
+      <div class="project">🛒 Retail Object Detection - 5K bounding box images</div>
+    </div>
+  </section>
+
+<!-- Contact Section -->
+<section id="contact" style="background: #f4f9ff; padding: 60px 20px; text-align: center;">
+  <h2 style="color: #003366; font-size: 32px; margin-bottom: 20px;">Get in Touch</h2>
+  <p style="color: #333; font-size: 18px; margin-bottom: 30px;">
+    Have questions or need a custom dataset? We're happy to help.
+  </p>
+
+  <div style="margin-bottom: 25px;">
+    <a href="mailto:contact@duckdata.in" style="color: #0059b3; font-weight: bold; font-size: 20px; text-decoration: none;">
+      📧 contact@duckdata.in
+    </a>
+  </div>
+
+  <div>
+    <a href=".//contact-us-form"
+       target="_blank"
+       style="
+         display: inline-block;
+         background-color: #0073e6;
+         color: #fff;
+         padding: 12px 24px;
+         border-radius: 8px;
+         font-size: 16px;
+         text-decoration: none;
+         transition: background 0.3s ease;
+       "
+       onmouseover="this.style.background='#005bb5'"
+       onmouseout="this.style.background='#0073e6'">
+      📞 Schedule a Call
+    </a>
+  </div>
+</section>
+
+
+<!-- Footer Section -->
+<footer style="background-color: #0077cc; color: white; padding: 20px 10px; text-align: center;">
+  <div style="margin-bottom: 10px;">
+    © 2025 DuckData. All rights reserved.
+  </div>
+  <div style="display: flex; justify-content: center; gap: 20px; align-items: center; flex-wrap: wrap;">
+    <a href="privacy" style="color: white; display: flex; align-items: center; gap: 5px;">
+      <i data-lucide="shield-check" style="width: 16px; height: 16px;"></i> Privacy Policy
+    </a>
+    <a href="terms-of-use" style="color: white; display: flex; align-items: center; gap: 5px;">
+      <i data-lucide="info" style="width: 16px; height: 16px;"></i> Terms-of-use
+    </a>
+  </div>
+    <!-- Social Media Icons -->
+  <div class="social-icons" style="display: flex; justify-content: center; gap: 15px; margin-top: 10px;">
+    <a href="https://x.com/duckdata_in" target="_blank">
+      <img src="./xlogo.webp" alt="Twitter" style="width: 24px; height: 24px;">
+    </a>
+    <a href="https://instagram.com/duckdata.in" target="_blank">
+      <img src="./instagram.png" alt="Telegram" style="width: 24px; height: 24px;">
+    </a>
+    <a href="https://www.youtube.com/@DuckData" target="_blank">
+      <img src="./youtube.webp" alt="YouTube" style="width: 24px; height: 24px;">
+    </a>
+    
+  </div>
+  </footer>
+  <script>
+      lucide.createIcons();
+  const menuToggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('nav');
+
+  menuToggle.addEventListener('click', () => {
+    const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+    menuToggle.setAttribute('aria-expanded', !isExpanded);
+    nav.classList.toggle('show');
+  });
+      const callButton = document.getElementById("callButton");
+
+  window.addEventListener("scroll", () => {
+    const scrollY = window.scrollY || window.pageYOffset;
+    const windowHeight = window.innerHeight;
+    const bodyHeight = document.body.offsetHeight;
+
+    // If user scrolled to bottom (or near), hide button
+    if (scrollY + windowHeight >= bodyHeight - 20) {
+      callButton.style.display = "none";
+    } else {
+      callButton.style.display = "block";
+    }
+  });
+    function toggleService(element) {
+    element.classList.toggle('active');
+  }
+    </script>
+</body>
+
+</html>
+
+
+
+
+>>>>>>> d0df90e (First commit from VS Code)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -137,3 +138,199 @@ nav {
 </body>
 
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DuckData — Data That Trains Intelligence </title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <script src="script.js"></script>
+</head>
+<body>
+<style>
+  /* Desktop Navigation */
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+/* Hide hamburger by default */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Adjust based on header height */
+    right: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    padding: 15px;
+    border-radius: 8px;
+    z-index: 9999;
+    align-items: flex-end; /* Align links to the right */
+    text-align: right;
+    width: fit-content;
+  }
+
+  nav.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav a {
+    padding: 10px 0;
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+  }
+}
+.service-content {
+  display: block;
+}
+
+.service-content p {
+  display: block;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+
+  </style>
+  <header>
+    <div class="logo">
+      <a href="index">
+        <img src="./dudckdatalogo.png" alt="DuckData Logo" />
+      </a>
+    </div>
+   <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-navigation">☰</button>
+  <nav id="primary-navigation">
+    <a href="index">Home</a>
+    <a href="datasets">DataSets</a>
+    <a href="daas">DaaS</a>
+    <a href="labs.duckdata.in">LABS</a>
+  </nav>
+  </header>
+    <!-- Services Section -->
+<section id="services">
+  <h2>Services</h2>
+  <div class="services">
+
+    <!-- Service 1 -->
+<div class="service" onclick="toggleService(this)">
+  <h3>Custom Image Datasets</h3>
+  <div class="service-content">
+    <p>
+      We specialize in creating high-quality, custom image datasets that are fully labeled and organized according to your unique requirements. Our team understands that no two AI projects are the same, which is why we take the time to analyze your objectives and deliver data that is purpose-built to achieve them. Whether you are working on facial recognition, object detection, autonomous navigation, or medical image analysis, our datasets are crafted to ensure your models receive the most relevant, clean, and accurate training material possible.
+    </p>
+    <p>
+      Each image is manually verified and annotated by human experts to maintain consistency and accuracy. We ensure the datasets cover diverse scenarios and edge cases, reducing bias and improving real-world applicability. From sourcing raw images to organizing them into structured, ready-to-use formats, we handle every step of the process so you can focus entirely on building and improving your AI solutions.
+    </p>
+  </div>
+</div>
+
+<!-- Service 2 -->
+<div class="service" onclick="toggleService(this)">
+  <h3>Custom Video Datasets</h3>
+  <div class="service-content">
+    <p>
+      Video data is one of the most complex yet valuable resources for machine learning and analytics, and we make it simple for you. Our custom video datasets are carefully curated to include only what matters to your project, removing unnecessary noise and ensuring every second of footage adds value. Whether it’s for training computer vision models, behavior analysis, surveillance, or retail monitoring, our video datasets come with precise labels, timestamps, and metadata to ensure seamless integration into your workflow.
+    </p>
+    <p>
+      Each clip is thoroughly reviewed and annotated by domain experts, ensuring accuracy and compliance with your requirements. We can include custom labeling strategies like object tracking, scene classification, or event detection, helping your models learn faster and perform better. By providing clean, highly relevant video data, we save your team significant time and effort while boosting the effectiveness of your AI and analytics systems.
+    </p>
+  </div>
+</div>
+
+<!-- Service 3 -->
+<div class="service" onclick="toggleService(this)">
+  <h3>DaaS – Data as a Service</h3>
+  <div class="service-content">
+    <p>
+      With our DaaS offering, we transform unstructured, raw data into structured, labeled, and ready-to-use datasets. This includes everything from images and videos to audio recordings and more. All processing is done by human experts to guarantee the highest quality and reliability. We understand that accurate data is the foundation of every successful AI or analytics project, and we are committed to delivering datasets that not only meet but exceed your expectations.
+    </p>
+    <p>
+      Our service is ideal for companies looking to outsource the time-consuming task of data preparation while ensuring complete control over the final output. Whether you’re developing new algorithms, performing market analysis, or training large-scale AI systems, our DaaS solution acts as an extension of your team. By letting us handle the complexity of data preparation, you can focus on innovation, model development, and achieving your business goals faster.
+    </p>
+  </div>
+</div>
+
+<!-- Service 4 -->
+<div class="service" onclick="toggleService(this)">
+  <h3>LABS – Your Project Partner</h3>
+  <div class="service-content">
+    <p>
+      LABS is designed for innovators — students, researchers, and businesses who need a trusted partner to turn ideas into reality. Whether you are experimenting with new technologies, building prototypes, or conducting academic research, our team is here to guide you through every step of the process. From deep learning models to embedded hardware, we combine expertise with a practical approach to help you reach your milestones quickly and effectively.
+    </p>
+    <p>
+      We focus on delivering end-to-end support, from concept and design to development and deployment. With access to skilled professionals across AI, IoT, computer vision, and data analytics, LABS ensures you always have the right resources for your project. Our mission is to make innovation accessible, reducing barriers and providing the technical backbone needed to bring your ideas to life.
+    </p>
+  </div>
+</div>
+
+<a href="./contact-us-form" class="floating-call-button" id="callButton">
+  Buy Now
+</a>
+
+
+  </div>
+</section>
+<!-- Footer Section -->
+<footer style="background-color: #0077cc; color: white; padding: 20px 10px; text-align: center;">
+  <div style="margin-bottom: 10px;">
+    © 2025 DuckData. All rights reserved.
+  </div>
+  <div style="display: flex; justify-content: center; gap: 20px; align-items: center; flex-wrap: wrap;">
+    <a href="privacy" style="color: white; display: flex; align-items: center; gap: 5px;">
+      <i data-lucide="shield-check" style="width: 16px; height: 16px;"></i> Privacy Policy
+    </a>
+    <a href="terms-of-use" style="color: white; display: flex; align-items: center; gap: 5px;">
+      <i data-lucide="info" style="width: 16px; height: 16px;"></i> Terms of Use
+    </a>
+  </div>
+    <!-- Social Media Icons -->
+  <div class="social-icons" style="display: flex; justify-content: center; gap: 15px; margin-top: 10px;">
+    <a href="https://x.com/duckdata_in" target="_blank">
+      <img src="./xlogo.webp" alt="Twitter" style="width: 24px; height: 24px;">
+    </a>
+    <a href="https://instagram.com/duckdata.in" target="_blank">
+      <img src="./instagram.png" alt="Telegram" style="width: 24px; height: 24px;">
+    </a>
+    <a href="https://www.youtube.com/@DuckData" target="_blank">
+      <img src="./youtube.webp" alt="YouTube" style="width: 24px; height: 24px;">
+    </a>
+      
+  </div>
+  <script>
+      lucide.createIcons();
+  const menuToggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('nav');
+
+  menuToggle.addEventListener('click', () => {
+    const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+    menuToggle.setAttribute('aria-expanded', !isExpanded);
+    nav.classList.toggle('show');
+  });
+    </script>
+</footer>
+</body>
+
+</html>
+>>>>>>> d0df90e (First commit from VS Code)

@@ -19,6 +19,7 @@
 </script>
 </head>
 <body>
+<<<<<<< HEAD
 <style> * {
   margin: 0;
   padding: 0;
@@ -53,10 +54,15 @@ header {
   border: none;
   cursor: pointer;
 }
+=======
+<style>
+  /* Desktop Navigation */
+>>>>>>> d0df90e (First commit from VS Code)
 nav {
   display: flex;
   gap: 20px;
 }
+<<<<<<< HEAD
 nav a {
   color: white;
   text-decoration: none;
@@ -66,10 +72,24 @@ nav a {
   .menu-toggle {
     display: block;
   }
+=======
+
+/* Hide hamburger by default */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+>>>>>>> d0df90e (First commit from VS Code)
   nav {
     display: none;
     flex-direction: column;
     position: absolute;
+<<<<<<< HEAD
     top: 60px;
     right: 10px;
     background-color: white;
@@ -153,6 +173,37 @@ footer {
   height: 24px;
 }
 </style>
+=======
+    top: 60px; /* Adjust based on header height */
+    right: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    padding: 15px;
+    border-radius: 8px;
+    z-index: 9999;
+    align-items: flex-end; /* Align links to the right */
+    text-align: right;
+    width: fit-content;
+  }
+
+  nav.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav a {
+    padding: 10px 0;
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+  }
+}
+
+  </style>
+>>>>>>> d0df90e (First commit from VS Code)
   <!-- Header -->
   <header>
     <div class="logo" onclick="location.href='index.html'">
