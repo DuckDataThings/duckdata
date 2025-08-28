@@ -1,4 +1,3 @@
-<<<<<<< HEAD
   lucide.createIcons();
   function handleSubmit(event) {
       event.preventDefault();
@@ -23,8 +22,7 @@
     document.getElementById("whatsapp-popup").style.display = "block";
   });
 
- 
-=======
+
   lucide.createIcons();
   function handleSubmit(event) {
       event.preventDefault();
@@ -49,5 +47,3 @@
     document.getElementById("whatsapp-popup").style.display = "block";
   });
 
- 
->>>>>>> d0df90e (First commit from VS Code)
