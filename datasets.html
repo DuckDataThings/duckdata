@@ -3,27 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>DuckData - Data that Trains Intelligence</title>
+  <title>DuckData — Data That Trains Intelligence</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="apple-touch-icon" href="favicon.png">
-  <script src="https://unpkg.com/lucide@latest"></script>
   <script src="script.js"></script>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SYQ8H0V4G8"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-SYQ8H0V4G8');
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SYQ8H0V4G8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SYQ8H0V4G8');
+  </script>
 </head>
 <body>
-  <header>
-    <style>
+<header>
+  <style>
   /* Desktop Navigation */
 nav {
   display: flex;
@@ -71,90 +70,129 @@ nav {
     text-decoration: none;
   }
 }
-.whatsapp-float {
-  position: fixed;
-  width: 60px;
-  height: 60px;
-  bottom: 20px;
-  right: 20px;
-  background-color: #25d366;
-  color: #fff;
-  border-radius: 50%;
-  text-align: center;
-  box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
-  z-index: 100;
-}
-.whatsapp-float img {
-  width: 35px;
-  margin-top: 12px;
-}
-.whatsapp-float:hover {
-  transform: scale(1.1);
-  transition: 0.3s;
-}
-
 
   </style>
     <div class="logo">
       <a href="index">
-        <img src="./dudckdatalogo.png" alt="DuckData Logo" />
+        <img src="./images/dudckdatalogo.png" alt="DuckData Logo" />
       </a>
     </div>
     <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-navigation">☰</button>
     <nav id="primary-navigation">
       <a href="index">Home</a>
-      <a href="contact">Order Now</a>
+      <a href="datasets">DataSets</a>
       <a href="daas">DaaS</a>
-      <a href="labs.duckdata.in">LABS</a>
-      <a href="services">Services</a>
+      <a href="https://labs.duckdata.in/">LABS</a>
+      <a href="contact">Contact</a>
     </nav>
   </header>
 
-<section style="padding: 20px; font-family: Arial, sans-serif;">
-  <h2 style="text-align: center; font-size: 24px; margin-bottom: 20px;">Our Datasets</h2>
-  
-  <!-- Smart Sanitation -->
-  <div style="margin-bottom: 30px;">
-    <h3>💧 Smart Sanitation: Data for ML-Powered Tank Monitoring</h3>
-    <div style="display: flex; flex-wrap: wrap; gap: 10px; margin: 10px 0;">
-      <img src="images/sanitation1.jpg" alt="Smart Sanitation 1" style="width: 32%; min-width: 100px; flex: 1;">
-      <img src="images/sanitation2.jpg" alt="Smart Sanitation 2" style="width: 32%; min-width: 100px; flex: 1;">
-      <img src="images/sanitation1.jpg" alt="Smart Sanitation 3" style="width: 32%; min-width: 100px; flex: 1;">
+  <div class="container">
+    <h1>Our DataSets</h1>
+
+    <!-- Project 1 -->
+    <div class="project">
+  <h2>🤖 AI Surveillance Dataset for Exam Monitoring</h2>
+  <p>
+    In this project, DuckData played a crucial role in enabling AI training for exam surveillance systems.
+    We delivered a well-curated image dataset featuring:
+    <ul>
+      <li>Students seated in exam-style settings</li>
+      <li>Classroom environments from various angles</li>
+      <li>Interactions resembling real-world academic behavior</li>
+    </ul>
+    These images helped the client build and refine AI models aimed at detecting suspicious activities during exams.
+    </p>
+
+  <div class="images" oncontextmenu="return false;" style="display: flex; gap: 20px; flex-wrap: wrap;">
+    <div style="text-align: center;">
+      <img src="./images/cp1.jpg" alt="Sample exam copy 1" style="width: 100%; max-width: 300px; border-radius: 10px;" />
+      <p>Student Seating – Angle 1</p>
     </div>
-    <a href="#" style="display: inline-block; padding: 10px 15px; background: #007bff; color: white; text-decoration: none; border-radius: 5px;">Download Dataset</a>
-  </div>
-
-  <!-- AI Surveillance -->
-  <div style="margin-bottom: 30px;">
-    <h3>🤖 AI Surveillance Dataset for Exam Monitoring</h3>
-    <div style="display: flex; flex-wrap: wrap; gap: 10px; margin: 10px 0;">
-      <img src="images/surveillance1.jpg" alt="Surveillance 1" style="width: 32%; min-width: 100px; flex: 1;">
-      <img src="images/sanitation2.jpg" alt="Surveillance 2" style="width: 32%; min-width: 100px; flex: 1;">
-      <img src="images/surveillance3.jpg" alt="Surveillance 3" style="width: 32%; min-width: 100px; flex: 1;">
+    <div style="text-align: center;">
+      <img src="./images/cp2.jpg" alt="Sample exam copy 2" style="width: 100%; max-width: 300px; border-radius: 10px;" />
+      <p>Student Seating – Angle 2</p>
     </div>
-    <a href="#" style="display: inline-block; padding: 10px 15px; background: #007bff; color: white; text-decoration: none; border-radius: 5px;">Download Dataset</a>
-  </div>
-
-  <!-- Retail Object Detection -->
-  <div style="margin-bottom: 30px;">
-    <h3>🛒 Retail Object Detection - 5K bounding box images</h3>
-    <div style="display: flex; flex-wrap: wrap; gap: 10px; margin: 10px 0;">
-      <img src="images/sanitation1.jpg" alt="Retail Object 1" style="width: 32%; min-width: 100px; flex: 1;">
-      <img src="images/sanitation2.jpg" alt="Retail Object 2" style="width: 32%; min-width: 100px; flex: 1;">
-      <img src="images/surveillance2.jpg" alt="Retail Object 3" style="width: 32%; min-width: 100px; flex: 1;">
+    <div style="text-align: center;">
+      <img src="./images/cp3.jpg" alt="Sample exam copy 3" style="width: 100%; max-width: 300px; border-radius: 10px;" />
+      <p>Student Seating – Angle 3</p>
     </div>
-    <a href="#" style="display: inline-block; padding: 10px 15px; background: #007bff; color: white; text-decoration: none; border-radius: 5px;">Download Dataset</a>
+  </div>
+      <div class="links" style="margin-top: 20px;">
+  <a href="https://drive.google.com/file/d/1veEvkn0OJeTXgd3qofP9n4D4kxMXMkQw/view?usp=sharing" 
+     target="_blank" 
+     style="
+       display: inline-block;
+       background-color: #d90429;
+       color: white;
+       font-weight: bold;
+       text-decoration: none;
+       padding: 10px 20px;
+       border-radius: 8px;
+       transition: background-color 0.3s ease;
+     "
+     onmouseover="this.style.backgroundColor='#a9031f';"
+     onmouseout="this.style.backgroundColor='#d90429';">
+    ▶ Watch Video
+  </a>
+</div>
+ <p><strong>Note:</strong> DuckData was responsible only for high-quality, contextually relevant image collection — not for the AI model development itself.
+  </p>
+</div>
+
+
+    <!-- Project 2 -->
+  <div class="project">
+  <h2>💧 Smart Sanitation: Data for ML-Powered Tank Monitoring</h2>
+  <p>
+    For this project, DuckData supplied a rich dataset of real-world images capturing the varying cleanliness conditions of closed water tanks.
+    The dataset included visuals of:
+    <ul>
+      <li>Clean tanks with minimal residue</li>
+      <li>Partially cleaned tanks with noticeable buildup</li>
+      <li>Dirty tanks showcasing real-world contamination</li>
+    </ul>
+    This visual data enabled the client to train a machine learning model that can automatically assess tank hygiene without manual inspections.
+     </p>
+
+  <div class="images" oncontextmenu="return false;" style="display: flex; gap: 20px; flex-wrap: wrap;">
+    <div style="text-align: center;">
+      <img src="./images/wp1.jpg" alt="Clean tank image" style="width: 100%; max-width: 300px; border-radius: 10px;" />
+      <p>Clean Tank Condition</p>
+    </div>
+    <div style="text-align: center;">
+      <img src="./images/wp2.jpg" alt="Dirty tank image" style="width: 100%; max-width: 300px; border-radius: 10px;" />
+      <p>Dirty Tank Condition</p>
+    </div>
   </div>
 
-  <!-- Coming Soon -->
-  <div style="margin-bottom: 30px;">
-    <h3>👐 ASL American Sign Language Dataset - Coming Soon</h3>
+ <div class="links" style="margin-top: 20px;">
+  <a href="https://drive.google.com/file/d/1PrWQ5RCra6qTqQzPi7pZbnmZWkIa4Kgw/view?usp=sharing" 
+     target="_blank" 
+     style="
+       display: inline-block;
+       background-color: #d90429;
+       color: white;
+       font-weight: bold;
+       text-decoration: none;
+       padding: 10px 20px;
+       border-radius: 8px;
+       transition: background-color 0.3s ease;
+     "
+     onmouseover="this.style.backgroundColor='#a9031f';"
+     onmouseout="this.style.backgroundColor='#d90429';">
+    ▶ Watch Video
+  </a>
+</div>
+
+    <p><strong>Note:</strong> Our focus was solely on high-quality, labeled image collection — not ML development.
+ </p>
+</div>
   </div>
-</section>
 
 
- <!-- Footer Section -->
-<footer style="background-color: #0077cc; color: white; padding: 20px 10px; text-align: center;">
+<!-- Footer Section -->
+<footer>
   <div style="margin-bottom: 10px;">
     © 2025 DuckData. All rights reserved.
   </div>
@@ -163,32 +201,36 @@ nav {
       <i data-lucide="shield-check" style="width: 16px; height: 16px;"></i> Privacy Policy
     </a>
     <a href="terms-of-use" style="color: white; display: flex; align-items: center; gap: 5px;">
-      <i data-lucide="info" style="width: 16px; height: 16px;"></i> Terms of Use
+      <i data-lucide="info" style="width: 16px; height: 16px;"></i> Terms-of-use
     </a>
   </div>
     <!-- Social Media Icons -->
   <div class="social-icons" style="display: flex; justify-content: center; gap: 15px; margin-top: 10px;">
     <a href="https://x.com/duckdata_in" target="_blank">
-      <img src="./xlogo.webp" alt="Twitter" style="width: 24px; height: 24px;">
+      <img src="./images/xlogo.webp" alt="Twitter" style="width: 24px; height: 24px;">
     </a>
     <a href="https://instagram.com/duckdata.in" target="_blank">
-      <img src="./instagram.png" alt="Telegram" style="width: 24px; height: 24px;">
+      <img src="./images/instagram.png" alt="Telegram" style="width: 24px; height: 24px;">
     </a>
     <a href="https://www.youtube.com/@DuckData" target="_blank">
-      <img src="./youtube.webp" alt="YouTube" style="width: 24px; height: 24px;">
+      <img src="./images/youtube.webp" alt="YouTube" style="width: 24px; height: 24px;">
     </a>
+    
   </div>
-</footer>
+  </footer>
+    
+  </div>
+  </footer>
     <script>
       lucide.createIcons();
       const menuToggle = document.querySelector('.menu-toggle');
       const nav = document.querySelector('nav');
+
       menuToggle.addEventListener('click', () => {
         const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
         menuToggle.setAttribute('aria-expanded', !isExpanded);
         nav.classList.toggle('show');
       });
     </script>
- 
 </body>
 </html>

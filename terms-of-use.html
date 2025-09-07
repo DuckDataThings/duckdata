@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -67,7 +66,7 @@ nav {
   <header>
     <div class="logo">
       <a href="index">
-        <img src="./dudckdatalogo.png" alt="DuckData Logo" />
+        <img src="./images/dudckdatalogo.png" alt="DuckData Logo" />
       </a>
     </div>
    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-navigation">☰</button>
@@ -99,7 +98,7 @@ nav {
 
  
 <!-- Footer Section -->
-<footer style="background-color: #0077cc; color: white; padding: 20px 10px; text-align: center;">
+<footer>
   <div style="margin-bottom: 10px;">
     © 2025 DuckData. All rights reserved.
   </div>
@@ -108,21 +107,23 @@ nav {
       <i data-lucide="shield-check" style="width: 16px; height: 16px;"></i> Privacy Policy
     </a>
     <a href="terms-of-use" style="color: white; display: flex; align-items: center; gap: 5px;">
-      <i data-lucide="info" style="width: 16px; height: 16px;"></i> Terms of Use
+      <i data-lucide="info" style="width: 16px; height: 16px;"></i> Terms-of-use
     </a>
   </div>
     <!-- Social Media Icons -->
   <div class="social-icons" style="display: flex; justify-content: center; gap: 15px; margin-top: 10px;">
     <a href="https://x.com/duckdata_in" target="_blank">
-      <img src="./xlogo.webp" alt="Twitter" style="width: 24px; height: 24px;">
+      <img src="./images/xlogo.webp" alt="Twitter" style="width: 24px; height: 24px;">
     </a>
     <a href="https://instagram.com/duckdata.in" target="_blank">
-      <img src="./instagram.png" alt="Telegram" style="width: 24px; height: 24px;">
+      <img src="./images/instagram.png" alt="Telegram" style="width: 24px; height: 24px;">
     </a>
     <a href="https://www.youtube.com/@DuckData" target="_blank">
-      <img src="./youtube.webp" alt="YouTube" style="width: 24px; height: 24px;">
+      <img src="./images/youtube.webp" alt="YouTube" style="width: 24px; height: 24px;">
     </a>
+    
   </div>
+  </footer>
   <script>
       lucide.createIcons();
   const menuToggle = document.querySelector('.menu-toggle');
@@ -134,147 +135,5 @@ nav {
     nav.classList.toggle('show');
   });
     </script>
-</footer>
 </body>
 
-=======
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>DuckData — Data That Trains Intelligence </title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <script src="https://unpkg.com/lucide@latest"></script>
-  <link rel="icon" type="image/png" href="favicon.png">
-  <link rel="shortcut icon" href="favicon.ico">
-  <link rel="apple-touch-icon" href="favicon.png">
-  <script src="script.js"></script>
-</head>
-<body>
-<style>
-  /* Desktop Navigation */
-nav {
-  display: flex;
-  gap: 20px;
-}
-
-/* Hide hamburger by default */
-.menu-toggle {
-  display: none;
-  font-size: 28px;
-  cursor: pointer;
-  color: white;
-}
-
-/* Mobile Styles */
-@media (max-width: 768px) {
-  nav {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 60px; /* Adjust based on header height */
-    right: 10px;
-    background-color: #ffffff;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-    padding: 15px;
-    border-radius: 8px;
-    z-index: 9999;
-    align-items: flex-end; /* Align links to the right */
-    text-align: right;
-    width: fit-content;
-  }
-
-  nav.show {
-    display: flex;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-
-  nav a {
-    padding: 10px 0;
-    font-size: 16px;
-    color: #000;
-    text-decoration: none;
-  }
-}
-
-  </style>
-  <header>
-    <div class="logo">
-      <a href="index">
-        <img src="./dudckdatalogo.png" alt="DuckData Logo" />
-      </a>
-    </div>
-   <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-navigation">☰</button>
-  <nav id="primary-navigation">
-    <a href="index">Home</a>
-    <a href="projects">Projects</a>
-    <a href="about">About Us</a>
-    <a href="services">Services</a>
-  </nav>
-  </header>
-   <section id="terms">
-  <h2>Terms of Use</h2>
-  <p>
-    By accessing and using DuckData, you agree to the following terms and conditions. Please read them carefully before using our services.
-  </p>
-  <ul>
-    <li><strong>1. Use of Data:</strong> All datasets provided by DuckData are intended for research and commercial use as agreed upon in your service agreement. Redistribution without written consent is strictly prohibited.</li>
-    <li><strong>2. Intellectual Property:</strong> All content, including text, logos, datasets, and site materials, are the intellectual property of DuckData unless otherwise stated.</li>
-    <li><strong>3. Accuracy of Information:</strong> While we strive to provide accurate and updated content, DuckData does not guarantee the completeness or reliability of the information provided.</li>
-    <li><strong>4. Service Modifications:</strong> We reserve the right to modify, suspend, or discontinue any part of our services or content without prior notice.</li>
-    <li><strong>5. User Responsibilities:</strong> You agree not to misuse our services, attempt unauthorized access, or engage in any activity that harms DuckData or its users.</li>
-    <li><strong>6. Limitation of Liability:</strong> DuckData is not liable for any direct or indirect damages resulting from the use of our services or datasets.</li>
-    <li><strong>7. Third-party Links:</strong> Our website may contain links to third-party websites. We are not responsible for the content or practices of these external sites.</li>
-    <li><strong>8. Changes to Terms:</strong> These terms may be updated at any time. Continued use of the site signifies your acceptance of the revised terms.</li>
-    <li><strong>9. Governing Law:</strong> These terms are governed by the laws of India. Any disputes will be resolved under Indian jurisdiction.</li>
-    <li><strong>10. Contact:</strong> For questions regarding these terms, please contact us at <a href="mailto:contact@duckdata.in">contact@duckdata.in</a>.</li>
-  </ul>
-</section>
-
- 
-<!-- Footer Section -->
-<footer style="background-color: #0077cc; color: white; padding: 20px 10px; text-align: center;">
-  <div style="margin-bottom: 10px;">
-    © 2025 DuckData. All rights reserved.
-  </div>
-  <div style="display: flex; justify-content: center; gap: 20px; align-items: center; flex-wrap: wrap;">
-    <a href="privacy" style="color: white; display: flex; align-items: center; gap: 5px;">
-      <i data-lucide="shield-check" style="width: 16px; height: 16px;"></i> Privacy Policy
-    </a>
-    <a href="terms-of-use" style="color: white; display: flex; align-items: center; gap: 5px;">
-      <i data-lucide="info" style="width: 16px; height: 16px;"></i> Terms of Use
-    </a>
-  </div>
-    <!-- Social Media Icons -->
-  <div class="social-icons" style="display: flex; justify-content: center; gap: 15px; margin-top: 10px;">
-    <a href="https://x.com/duckdata_in" target="_blank">
-      <img src="./xlogo.webp" alt="Twitter" style="width: 24px; height: 24px;">
-    </a>
-    <a href="https://instagram.com/duckdata.in" target="_blank">
-      <img src="./instagram.png" alt="Telegram" style="width: 24px; height: 24px;">
-    </a>
-    <a href="https://www.youtube.com/@DuckData" target="_blank">
-      <img src="./youtube.webp" alt="YouTube" style="width: 24px; height: 24px;">
-    </a>
-  </div>
-  <script>
-      lucide.createIcons();
-  const menuToggle = document.querySelector('.menu-toggle');
-  const nav = document.querySelector('nav');
-
-  menuToggle.addEventListener('click', () => {
-    const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
-    menuToggle.setAttribute('aria-expanded', !isExpanded);
-    nav.classList.toggle('show');
-  });
-    </script>
-</footer>
-</body>
-
->>>>>>> d0df90e (First commit from VS Code)
-</html>

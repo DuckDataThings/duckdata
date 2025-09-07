@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -76,7 +75,7 @@ nav {
   </style>
     <div class="logo">
       <a href="index">
-        <img src="./dudckdatalogo.png" alt="DuckData Logo" />
+        <img src="./images/dudckdatalogo.png" alt="DuckData Logo" />
       </a>
     </div>
     <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-navigation">☰</button>
@@ -157,7 +156,7 @@ nav {
  </section>
 
  <!-- Footer Section -->
-<footer style="background-color: #0077cc; color: white; padding: 20px 10px; text-align: center;">
+<footer>
   <div style="margin-bottom: 10px;">
     © 2025 DuckData. All rights reserved.
   </div>
@@ -166,22 +165,23 @@ nav {
       <i data-lucide="shield-check" style="width: 16px; height: 16px;"></i> Privacy Policy
     </a>
     <a href="terms-of-use" style="color: white; display: flex; align-items: center; gap: 5px;">
-      <i data-lucide="info" style="width: 16px; height: 16px;"></i> Terms of Use
+      <i data-lucide="info" style="width: 16px; height: 16px;"></i> Terms-of-use
     </a>
   </div>
     <!-- Social Media Icons -->
   <div class="social-icons" style="display: flex; justify-content: center; gap: 15px; margin-top: 10px;">
     <a href="https://x.com/duckdata_in" target="_blank">
-      <img src="./xlogo.webp" alt="Twitter" style="width: 24px; height: 24px;">
+      <img src="./images/xlogo.webp" alt="Twitter" style="width: 24px; height: 24px;">
     </a>
     <a href="https://instagram.com/duckdata.in" target="_blank">
-      <img src="./instagram.png" alt="Telegram" style="width: 24px; height: 24px;">
+      <img src="./images/instagram.png" alt="Telegram" style="width: 24px; height: 24px;">
     </a>
     <a href="https://www.youtube.com/@DuckData" target="_blank">
-      <img src="./youtube.webp" alt="YouTube" style="width: 24px; height: 24px;">
+      <img src="./images/youtube.webp" alt="YouTube" style="width: 24px; height: 24px;">
     </a>
+    
   </div>
-</footer>
+  </footer>
     <script>
       lucide.createIcons();
       const menuToggle = document.querySelector('.menu-toggle');
@@ -195,201 +195,3 @@ nav {
  
 </body>
 </html>
-=======
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Privacy Policy — DuckData</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" href="favicon.png">
-  <link rel="shortcut icon" href="favicon.ico">
-  <link rel="apple-touch-icon" href="favicon.png">
-  <script src="https://unpkg.com/lucide@latest"></script>
-  <script src="script.js"></script>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SYQ8H0V4G8"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-SYQ8H0V4G8');
-</script>
-</head>
-<body>
-  <header>
-    <style>
-  /* Desktop Navigation */
-nav {
-  display: flex;
-  gap: 20px;
-}
-
-/* Hide hamburger by default */
-.menu-toggle {
-  display: none;
-  font-size: 28px;
-  cursor: pointer;
-  color: white;
-}
-
-/* Mobile Styles */
-@media (max-width: 768px) {
-  nav {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 60px; /* Adjust based on header height */
-    right: 10px;
-    background-color: #ffffff;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-    padding: 15px;
-    border-radius: 8px;
-    z-index: 9999;
-    align-items: flex-end; /* Align links to the right */
-    text-align: right;
-    width: fit-content;
-  }
-
-  nav.show {
-    display: flex;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-
-  nav a {
-    padding: 10px 0;
-    font-size: 16px;
-    color: #000;
-    text-decoration: none;
-  }
-}
-
-  </style>
-    <div class="logo">
-      <a href="index">
-        <img src="./dudckdatalogo.png" alt="DuckData Logo" />
-      </a>
-    </div>
-    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-navigation">☰</button>
-    <nav id="primary-navigation">
-      <a href="index">Home</a>
-      <a href="projects">Projects</a>
-      <a href="about">About Us</a>
-      <a href="contact">Contact</a>
-    </nav>
-  </header>
-
- <section class="privacy-policy">
-  <h1>Privacy Policy</h1>
-
-  <p>
-    At <span class="highlight">DuckData</span>, your privacy matters. This policy outlines what we collect, how we use it, and how we keep it safe — with zero nonsense and full transparency.
-  </p>
-
-  <h2>1. What We Collect</h2>
-  <p>
-    We collect only what’s necessary to deliver our services:
-    <ul>
-      <li>Your contact details when you reach out to us</li>
-      <li>Basic business or project info for dataset collaborations</li>
-      <li>Media data (images, videos) you provide for training datasets</li>
-    </ul>
-  </p>
-
-  <h2>2. Why We Collect It</h2>
-  <p>
-    We use the data you provide to:
-    <ul>
-      <li>Create and customize AI datasets for your needs</li>
-      <li>Communicate and collaborate on projects</li>
-      <li>Ensure dataset quality, traceability, and compliance</li>
-    </ul>
-  </p>
-
-  <h2>3. How We Protect It</h2>
-  <p>
-    We use secure cloud storage and internal access control. When handling sensitive data, we use:
-    <ul>
-      <li>Encryption during storage and transfer</li>
-      <li>Anonymization when required</li>
-      <li>Strict internal access policies</li>
-    </ul>
-  </p>
-
-  <h2>4. Who We Share It With</h2>
-  <p>
-    We do <strong>not</strong> sell your data. We only share data when:
-    <ul>
-      <li>You’ve explicitly agreed to share it</li>
-      <li>It’s required by law</li>
-      <li>We work with partners under binding confidentiality agreements</li>
-    </ul>
-  </p>
-
-  <h2>5. Your Control</h2>
-  <p>
-    You have full control over your data. You can:
-    <ul>
-      <li>Request access to any personal information we hold</li>
-      <li>Ask us to delete or update your data</li>
-      <li>Withdraw any consents you’ve given</li>
-    </ul>
-    To do this, just email us at <strong>duckdata.support@email.com</strong>.
-  </p>
-
-  <h2>6. Policy Updates</h2>
-  <p>
-    We may update this policy as we grow. All changes will be posted here with the latest date. No hidden terms. No shady practices.
-  </p>
-
-  <div class="updated-date">
-    Last updated: July 25, 2025
-  </div>
- </section>
-
- <!-- Footer Section -->
-<footer style="background-color: #0077cc; color: white; padding: 20px 10px; text-align: center;">
-  <div style="margin-bottom: 10px;">
-    © 2025 DuckData. All rights reserved.
-  </div>
-  <div style="display: flex; justify-content: center; gap: 20px; align-items: center; flex-wrap: wrap;">
-    <a href="privacy" style="color: white; display: flex; align-items: center; gap: 5px;">
-      <i data-lucide="shield-check" style="width: 16px; height: 16px;"></i> Privacy Policy
-    </a>
-    <a href="terms-of-use" style="color: white; display: flex; align-items: center; gap: 5px;">
-      <i data-lucide="info" style="width: 16px; height: 16px;"></i> Terms of Use
-    </a>
-  </div>
-    <!-- Social Media Icons -->
-  <div class="social-icons" style="display: flex; justify-content: center; gap: 15px; margin-top: 10px;">
-    <a href="https://x.com/duckdata_in" target="_blank">
-      <img src="./xlogo.webp" alt="Twitter" style="width: 24px; height: 24px;">
-    </a>
-    <a href="https://instagram.com/duckdata.in" target="_blank">
-      <img src="./instagram.png" alt="Telegram" style="width: 24px; height: 24px;">
-    </a>
-    <a href="https://www.youtube.com/@DuckData" target="_blank">
-      <img src="./youtube.webp" alt="YouTube" style="width: 24px; height: 24px;">
-    </a>
-  </div>
-</footer>
-    <script>
-      lucide.createIcons();
-      const menuToggle = document.querySelector('.menu-toggle');
-      const nav = document.querySelector('nav');
-      menuToggle.addEventListener('click', () => {
-        const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
-        menuToggle.setAttribute('aria-expanded', !isExpanded);
-        nav.classList.toggle('show');
-      });
-    </script>
- 
-</body>
-</html>
->>>>>>> d0df90e (First commit from VS Code)
